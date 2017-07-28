@@ -1,0 +1,237 @@
+//方法與涵式
+//extend 方法================================================================
+//框框的高與字體大小
+%frame {
+    line-height: 25px;
+    font-size: 11pt;
+}
+%frame2{
+  height: 19px;
+  font-size: 12.5pt;
+}
+
+%clear {
+    //偽類清除浮動的方法
+    content: $content;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+%hide-text {
+    //隱藏文字的方法
+    text-indent: -9999px;
+    font: 0/0 a;
+    text-shadow: none;
+    color: transparent;
+}
+
+%ellipsis {
+    //超過範圍文字變成'...'的方法
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+%icon-pic {
+    //偽類作為行內icon-pic的方法，請參閱 _bace_icon-pic
+    content: $content;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+%icon-font {
+    //偽類作為行內icon-font的方法，請參閱 _bace_icon-font
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+%reset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    list-style: none;
+    background-color: transparent;
+    font-size: $font-size-m;
+    font-weight: $font-weight-n;
+    transition: 0;
+}
+
+%input {
+    line-height: 19px;
+    margin: 10px 0px;
+    /* padding: 0px;
+    padding: 0 0 5px 0\0; */
+    resize: none;
+    vertical-align: middle;
+    margin-left: 5px;
+    font-size: 12.5pt; 
+}
+
+%Table_tr {
+    display: table-row!important;
+}
+
+%Table_td {
+    display: table-cell;
+    padding-right: 10px;
+}
+
+%DeleteBtn {
+    font-size: 15px;
+    width: 16px;
+    padding: 4px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    text-align: center;
+    background: #709FBA;
+    color: $white;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+%Btn_style01 {
+    padding: 8px;
+    background: #D9078C;
+    color: $white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+%FinishBtn {
+    width: 100px !important;
+    height: 35px !important;
+    background: #4798EB;
+    border-width: 0px;
+    color: $white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 40px;
+    font-size: 12.5pt;
+}
+
+%Presentation {
+    border: 1px dashed $gray;
+    cursor: default;
+    margin: 15px 0;
+    padding: 2px 3px;
+    vertical-align: top;
+    font-size: 11pt;
+}
+
+%ToolTip {
+    position: absolute;
+    margin-left: -35px;
+    margin-top: 50%;
+    width: 35px;
+    padding: 5px;
+    display: inline-block;
+    background-color: transparent;
+    color: transparent;
+    border-radius: 5px;
+    &:after {
+        width: 0px;
+        height: 0px;
+        border-width: 0 5px 10px 5px;
+        border-style: solid;
+        border-color: transparent transparent transparent transparent;
+        position: absolute;
+        content: "";
+        bottom: 93%;
+        left: 37%;
+    }
+}
+
+@mixin icon-pic( $img-name, $size: true, $height: null) {
+    //取雪碧圖icon，$img-name為圖片檔名，$size為false就不匯出寬高，$size為數字就會出指定倍數大小，$size為數字帶單位就會出指定指定大小，若指定第$height就會當作高度使用
+    @if( str-index( $img-name, '.png')) {
+        //如果有副檔名就拿掉
+        $img-name: str-slice( $img-name, 1, str-index( $img-name, '.png') - 1);
+    }
+    @if( $icon-pic) {
+        @extend %icon-pic;
+        @if( $size==true) {
+            //如果是 true 就匯出大小並使用sprites圖片
+            @if( $debug) {
+                @extend .icon-pic-#{ $img-name };
+            }
+            @else {
+                @extend .icon-pic-#{ $img-name } !optional;
+            }
+            width: image-width('icon-pic/#{$img-name}.png');
+            height: image-height('icon-pic/#{$img-name}.png');
+        }
+        @else {
+            @include bgToPic('icon-pic/#{$img-name}.png', $size, $height);
+        }
+    }
+}
+
+@mixin icon-font( $font) {
+    //文字圖示，列表請參閱 https://icomoon.io/
+    @if( $icon-font) {
+        @extend %icon-font;
+        @if( $debug) {
+            @extend .icon-font-#{ $font };
+        }
+        @else {
+            @extend .icon-font-#{ $font } !optional;
+        }
+        font-size: $icon-font-size;
+        color: $icon-font-color;
+    }
+}
+
+@mixin rwd( $max, $min: 0) {
+    //自訂 RWD 寬度，第一個參數是最大值，第二個參數是最小值
+    @media (max-width: #{$max + 0px }) and (min-width: #{$min + 1px}) {
+        @content;
+    }
+}
+
+@mixin at( $key, $obj: 'media') {
+    //查詢瀏覽器媒體與瀏覽器支持，在不同情況下呈現不同樣式
+    @if( ( $rwd==false) and ( $key=='mobile' or $key=='pad' or $key=='phone')) {
+        $obj: null;
+    }
+    @if( $key=='no-js') {
+        [data-js="false"] & {
+            @content;
+        }
+    }
+    @else {
+        @if( $obj=='media') {
+            @media #{map-get( $media, $key )} {
+                @content;
+            }
+        }
+        @else if( $obj=='supports') {
+            @supports #{map-get( $supports, $key )} {
+                @content;
+            }
+        }
+    }
+}
+
+@mixin data-js( $boolean: true) {
+    //在 有/無 js下的樣式表現
+    [data-js="#{$boolean}"] & {
+        @content;
+    }
+}
+
+@mixin data-admin( $boolean: true) {
+    //在 是/否 管理員登入的樣式表現
+    [data-admin="#{$boolean}"] & {
+        @content;
+    }
+}

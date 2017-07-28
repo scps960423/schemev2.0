@@ -1,0 +1,161 @@
+//排版框架
+
+/*
+tabtype 0 模組
+tabtype 1 分割
+tabtype 2 頁籤
+tabtype 3 單攔
+*/
+
+$min_set_length: 2; //最少的child數量
+$max_set_length: 10; //最多的child數量
+
+@for $i from $min_set_length through $max_set_length { //算分割
+
+	[data-tabtype="1"][data-child="#{$i}"] {
+
+		> .container{
+
+			> .inner{
+
+				> .group{
+					float: left;
+					width: 100% / $i;
+				}
+			}
+		}
+	}
+}
+
+[data-tabtype="1"] {
+
+	> .container{
+
+		> .inner{
+	
+			&:after{
+				@extend %clear;
+			}
+		}
+	}
+}
+
+$layout_main_interval: $interval-l; //主層間隔
+
+[data-tabtype="0"] { //模組
+
+	> .container {
+		margin: 0 $layout_main_interval;
+
+		> .inner {
+
+		}
+	}
+}
+
+[data-tabtype="1"] { //分割
+
+	> .container {
+
+		> .inner {
+
+		}
+	}
+}
+
+[data-tabtype="2"] { //頁籤
+
+	> .container {
+
+		> .inner {
+
+		}
+	}
+
+	.tabs{
+		margin: $interval-l $interval-l $interval-xl;
+	}
+}
+
+[data-tabtype="3"] { //單欄
+
+	> .container {
+
+		> .inner {
+
+		}
+	}
+}
+
+
+
+@include at-breakpoint(phone) { //phone
+
+	@for $i from $min_set_length through $max_set_length{ //算分割
+
+		[data-tabtype="1"][data-child="#{$i}"]{
+
+			> .container{
+
+				> .inner{
+
+					> .group{
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+
+	[data-tabtype="0"] { //模組
+
+		> .container {
+			margin: 0;
+
+			> .inner {
+
+			}
+		}
+	}
+
+	[data-tabtype="2"] { //頁籤
+
+		> .container {
+
+			> .inner {
+
+			}
+		}
+
+		.tabs{
+			margin: 0 0 $interval-xl;
+		}
+	}
+}
+
+@include at-breakpoint(pad) { //pad
+
+	@for $i from $min_set_length through $max_set_length{ //算分割
+
+		[data-tabtype="1"][data-child="#{$i}"]{
+
+			> .container{
+
+				> .inner{
+
+					> .group{
+						width: 50%;
+
+						&:nth-of-type(odd){
+							clear: left;
+						}
+
+						.group{
+							width: 100%;
+						}
+					}
+				}
+			}
+		}
+	}
+}

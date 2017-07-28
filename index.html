@@ -1,0 +1,1781 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="Scripts/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="Scripts/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="Scripts/From_UI.js" type="text/javascript"></script>
+</head>
+<body>
+    <form method="post" action="./Form.aspx" id="form1">
+    <div class="aspNetHidden">
+        <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTA4NDgyNTgxNWRkkEOD3fcav+G23ykhRF7sB/NubQsbdipqPajTCtYeNuk=">
+    </div>
+    <div class="aspNetHidden">
+        <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="3D8E3947">
+        <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAP6qDj3ozSsBeJgVs+1nT76lliAPKY+KvRmniYVjNuQiP/f6pst/GSaJ5rcWP3zbnaqmjKYZbegfcHFCmjSie5in2EUrOZNBbW+mxRQPUGbBQ==">
+    </div>
+    <div class="doc_container">
+        <div class="docs-editor">
+            <div id="EditArea" class="schema-editor ui-sortable">
+                <div class="EditBody">
+                    <h3>
+                        <span class="TitleLabel" cid="1" style="display: inline;">表單測試</span><hr cid="0"
+                            style="display: none;">
+                    </h3>
+                    <div class="CollapseArea" style="display: none;">
+                        <div class="EditFeatures">
+                            <div class="Copy">
+                            </div>
+                            <div class="Delete">
+                            </div>
+                        </div>
+                        <div class="Content">
+                            <input type="hidden" class="ContentGUID" dataid="0" value="6aa4e15c-1ade-7d64-405c-f207fab6c0c9"><select
+                                dataid="1"><optgroup label="基本"><option value="1">段落標題</option>
+                                    <option value="2">單行文字</option>
+                                    <option value="3">多行文字</option>
+                                    <option value="4">單選題</option>
+                                    <option value="5">多選題</option>
+                                    <option value="6">下拉式選單</option>
+                                    <option value="7">圖片題型</option>
+                                </optgroup>
+                                <optgroup label="進階">
+                                    <option value="8">插入圖片</option>
+                                    <option value="9">插入影片</option>
+                                    <option value="10">分隔線</option>
+                                </optgroup>
+                                <optgroup label="身分驗證">
+                                    <option value="11">身分證字號</option>
+                                    <option value="12">E-mail</option>
+                                </optgroup>
+                            </select><div class="TitleRow">
+                                <div class="TitleInputLabel" cid="1" style="display: table-cell;">
+                                </div>
+                                <input cid="1" dataid="2" class="form-inputfield" placeholder="表單測試" type="text"
+                                    style="display: inline-block;"><div cid="2" class="IsRequiredLabel" style="display: none;">
+                                        <input cid="2" dataid="3" style="margin-left: 10px; display: none;" type="checkbox"
+                                            name="necessary">將這個問題設為必填</div>
+                            </div>
+                            <div class="DescriptionRow">
+                                <div class="DescriptionLabel" cid="3" style="display: table-cell;">
+                                    說明文字</div>
+                                <textarea cid="3" dataid="4" rows="8" cols="0" dir="auto" style="display: inline-block;"></textarea></div>
+                            <ul class="option ui-sortable" cid="4" dataid="5" style="display: none;">
+                            </ul>
+                            <div class="optionTextFieldNew" cid="4" style="display: none;">
+                                <input type="text" placeholder="按一下這裡新增選項" style="cursor: pointer;"><span dataid="6"
+                                    cid="7" style="display: none;">或是<span style="cursor: pointer;" class="addOther">新增「其他」</span></span><div
+                                        cid="7" style="display: none;">
+                                        其他：<input type="text" class="otherOptionText" readonly="readonly" placeholder="答案會顯示在這裡"><span
+                                            class="DeleteBtn">X</span></div>
+                                <div class="perLineCount" cid="5" style="display: none;">
+                                    每行
+                                    <input type="text" dataid="7">
+                                    個選項</div>
+                                <div class="checkCount" cid="6" dataid="8" style="display: none;">
+                                    選取
+                                    <input type="radio" name="checkType0" value="1">至少
+                                    <input type="radio" name="checkType0" value="2">剛好
+                                    <input type="radio" name="checkType0" value="3">最多
+                                    <input type="text">
+                                    項
+                                </div>
+                            </div>
+                            <div cid="8" dataid="10" style="display: none;">
+                                <div>
+                                    <input type="file" accept="image/*" multiple=""></div>
+                                <ul class="ImageList ui-sortable" data-type="MultipleFile">
+                                </ul>
+                                <div class="MultiImageSetting">
+                                    <div class="imageSelectType">
+                                        <input type="radio" name="imageSelectType0" value="1" checked="checked">
+                                        單選
+                                        <input type="radio" name="imageSelectType0" value="2">
+                                        複選
+                                    </div>
+                                    <div class="imageSelectMulti" style="display: none;">
+                                        選取
+                                        <input type="radio" name="imageSelectMulti0" value="1" checked="checked">至少
+                                        <input type="radio" name="imageSelectMulti0" value="2">剛好
+                                        <input type="radio" name="imageSelectMulti0" value="3">最多
+                                        <input type="text">
+                                        項
+                                    </div>
+                                </div>
+                            </div>
+                            <div cid="9" dataid="11" style="display: none;">
+                                <div>
+                                    <input type="file" accept="image/*"></div>
+                                <ul class="ImageList" data-type="SingleFile">
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="EditBody">
+                    <h3>
+                        <span class="TitleLabel" cid="1" style="display: inline;">問題1</span><hr cid="0" style="display: none;">
+                    </h3>
+                    <div class="CollapseArea" style="display: none;">
+                        <div class="EditFeatures">
+                            <div class="Copy">
+                            </div>
+                            <div class="Delete">
+                            </div>
+                        </div>
+                        <div class="Content">
+                            <input type="hidden" class="ContentGUID" dataid="0" value="1157726c-b72d-22d0-07c5-3e3a9b0fcb90"><select
+                                dataid="1"><optgroup label="基本"><option value="1">段落標題</option>
+                                    <option value="2">單行文字</option>
+                                    <option value="3">多行文字</option>
+                                    <option value="4">單選題</option>
+                                    <option value="5">多選題</option>
+                                    <option value="6">下拉式選單</option>
+                                    <option value="7">圖片題型</option>
+                                </optgroup>
+                                <optgroup label="進階">
+                                    <option value="8">插入圖片</option>
+                                    <option value="9">插入影片</option>
+                                    <option value="10">分隔線</option>
+                                </optgroup>
+                                <optgroup label="身分驗證">
+                                    <option value="11">身分證字號</option>
+                                    <option value="12">E-mail</option>
+                                </optgroup>
+                            </select><div class="TitleRow">
+                                <div class="TitleInputLabel" cid="1" style="display: table-cell;">
+                                </div>
+                                <input cid="1" dataid="2" class="form-inputfield" placeholder="問題1" type="text" style="display: inline-block;"><div
+                                    cid="2" class="IsRequiredLabel" style="display: inline-block;">
+                                    <input cid="2" dataid="3" style="margin-left: 10px; display: inline-block;" type="checkbox"
+                                        name="necessary">將這個問題設為必填</div>
+                            </div>
+                            <div class="DescriptionRow">
+                                <div class="DescriptionLabel" cid="3" style="display: table-cell;">
+                                    說明文字</div>
+                                <textarea cid="3" dataid="4" rows="8" cols="0" dir="auto" style="display: inline-block;"></textarea></div>
+                            <ul class="option ui-sortable" cid="4" dataid="5" style="display: none;">
+                            </ul>
+                            <div class="optionTextFieldNew" cid="4" style="display: none;">
+                                <input type="text" placeholder="按一下這裡新增選項" style="cursor: pointer;"><span dataid="6"
+                                    cid="7" style="display: none;">或是<span style="cursor: pointer;" class="addOther">新增「其他」</span></span><div
+                                        cid="7" style="display: none;">
+                                        其他：<input type="text" class="otherOptionText" readonly="readonly" placeholder="答案會顯示在這裡"><span
+                                            class="DeleteBtn">X</span></div>
+                                <div class="perLineCount" cid="5" style="display: none;">
+                                    每行
+                                    <input type="text" dataid="7">
+                                    個選項</div>
+                                <div class="checkCount" cid="6" dataid="8" style="display: none;">
+                                    選取
+                                    <input type="radio" name="checkType1" value="1">至少
+                                    <input type="radio" name="checkType1" value="2">剛好
+                                    <input type="radio" name="checkType1" value="3">最多
+                                    <input type="text">
+                                    項
+                                </div>
+                            </div>
+                            <div cid="8" dataid="10" style="display: none;">
+                                <div>
+                                    <input type="file" accept="image/*" multiple=""></div>
+                                <ul class="ImageList ui-sortable" data-type="MultipleFile">
+                                </ul>
+                                <div class="MultiImageSetting">
+                                    <div class="imageSelectType">
+                                        <input type="radio" name="imageSelectType1" value="1" checked="checked">
+                                        單選
+                                        <input type="radio" name="imageSelectType1" value="2">
+                                        複選
+                                    </div>
+                                    <div class="imageSelectMulti" style="display: none;">
+                                        選取
+                                        <input type="radio" name="imageSelectMulti1" value="1" checked="checked">至少
+                                        <input type="radio" name="imageSelectMulti1" value="2">剛好
+                                        <input type="radio" name="imageSelectMulti1" value="3">最多
+                                        <input type="text">
+                                        項
+                                    </div>
+                                </div>
+                            </div>
+                            <div cid="9" dataid="11" style="display: none;">
+                                <div>
+                                    <input type="file" accept="image/*"></div>
+                                <ul class="ImageList" data-type="SingleFile">
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="EditBody">
+                    <h3>
+                        <span class="TitleLabel" cid="1" style="display: inline;">Q3</span><hr cid="0" style="display: none;">
+                    </h3>
+                    <div class="CollapseArea" style="display: none;">
+                        <div class="EditFeatures">
+                            <div class="Copy">
+                            </div>
+                            <div class="Delete">
+                            </div>
+                        </div>
+                        <div class="Content">
+                            <input type="hidden" class="ContentGUID" dataid="0" value="02887e71-3b40-1849-75ab-5828f18ffdb2"><select
+                                dataid="1"><optgroup label="基本"><option value="1">段落標題</option>
+                                    <option value="2">單行文字</option>
+                                    <option value="3">多行文字</option>
+                                    <option value="4">單選題</option>
+                                    <option value="5">多選題</option>
+                                    <option value="6">下拉式選單</option>
+                                    <option value="7">圖片題型</option>
+                                </optgroup>
+                                <optgroup label="進階">
+                                    <option value="8">插入圖片</option>
+                                    <option value="9">插入影片</option>
+                                    <option value="10">分隔線</option>
+                                </optgroup>
+                                <optgroup label="身分驗證">
+                                    <option value="11">身分證字號</option>
+                                    <option value="12">E-mail</option>
+                                </optgroup>
+                            </select><div class="TitleRow">
+                                <div class="TitleInputLabel" cid="1" style="display: table-cell;">
+                                </div>
+                                <input cid="1" dataid="2" class="form-inputfield" placeholder="Q3" type="text" style="display: inline-block;"><div
+                                    cid="2" class="IsRequiredLabel" style="display: inline-block;">
+                                    <input cid="2" dataid="3" style="margin-left: 10px; display: inline-block;" type="checkbox"
+                                        name="necessary">將這個問題設為必填</div>
+                            </div>
+                            <div class="DescriptionRow">
+                                <div class="DescriptionLabel" cid="3" style="display: table-cell;">
+                                    說明文字</div>
+                                <textarea cid="3" dataid="4" rows="8" cols="0" dir="auto" style="display: inline-block;"></textarea></div>
+                            <ul class="option ui-sortable" cid="4" dataid="5" style="display: block;">
+                                <li class="optionTextField ui-sortable-handle"><span style="cursor: move;">
+                                    <img src="images/point.png"></span><input type="text"><span class="DeleteBtn">X</span></li><li
+                                        class="optionTextField ui-sortable-handle"><span style="cursor: move;">
+                                            <img src="images/point.png"></span><input type="text"><span class="DeleteBtn">X</span></li><li
+                                                class="optionTextField ui-sortable-handle"><span style="cursor: move;">
+                                                    <img src="images/point.png"></span><input type="text"><span class="DeleteBtn">X</span></li><li
+                                                        class="optionTextField ui-sortable-handle"><span style="cursor: move;">
+                                                            <img src="images/point.png"></span><input type="text"><span class="DeleteBtn">X</span></li><li
+                                                                class="optionTextField ui-sortable-handle"><span style="cursor: move;">
+                                                                    <img src="images/point.png"></span><input type="text"><span class="DeleteBtn">X</span></li><li
+                                                                        class="optionTextField ui-sortable-handle"><span style="cursor: move;">
+                                                                            <img src="images/point.png"></span><input type="text"><span class="DeleteBtn">X</span></li></ul>
+                            <div class="optionTextFieldNew" cid="4" style="display: block;">
+                                <input type="text" placeholder="按一下這裡新增選項" style="cursor: pointer;"><span dataid="6"
+                                    cid="7" style="display: inline;">或是<span style="cursor: pointer;" class="addOther">新增「其他」</span></span><div
+                                        class="perLineCount" cid="5" style="display: block;">
+                                        每行
+                                        <input type="text" dataid="7">
+                                        個選項</div>
+                                <div class="checkCount" cid="6" dataid="8" style="display: none;">
+                                    選取
+                                    <input type="radio" name="checkType2" value="1">至少
+                                    <input type="radio" name="checkType2" value="2">剛好
+                                    <input type="radio" name="checkType2" value="3">最多
+                                    <input type="text">
+                                    項
+                                </div>
+                            </div>
+                            <div cid="8" dataid="10" style="display: none;">
+                                <div>
+                                    <input type="file" accept="image/*" multiple=""></div>
+                                <ul class="ImageList ui-sortable" data-type="MultipleFile">
+                                </ul>
+                                <div class="MultiImageSetting">
+                                    <div class="imageSelectType">
+                                        <input type="radio" name="imageSelectType2" value="1" checked="checked">
+                                        單選
+                                        <input type="radio" name="imageSelectType2" value="2">
+                                        複選
+                                    </div>
+                                    <div class="imageSelectMulti" style="display: none;">
+                                        選取
+                                        <input type="radio" name="imageSelectMulti2" value="1" checked="checked">至少
+                                        <input type="radio" name="imageSelectMulti2" value="2">剛好
+                                        <input type="radio" name="imageSelectMulti2" value="3">最多
+                                        <input type="text">
+                                        項
+                                    </div>
+                                </div>
+                            </div>
+                            <div cid="9" dataid="11" style="display: none;">
+                                <div>
+                                    <input type="file" accept="image/*"></div>
+                                <ul class="ImageList" data-type="SingleFile">
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="EditBody">
+                    <h3>
+                        <span class="TitleLabel" cid="1" style="display: inline;">圖片題型</span><hr cid="0"
+                            style="display: none;">
+                    </h3>
+                    <div class="CollapseArea" style="display: none;">
+                        <div class="EditFeatures">
+                            <div class="Copy">
+                            </div>
+                            <div class="Delete">
+                            </div>
+                        </div>
+                        <div class="Content">
+                            <input type="hidden" class="ContentGUID" dataid="0" value="f0f06ceb-5143-5ac1-db49-48558eda1192"><select
+                                dataid="1"><optgroup label="基本"><option value="1">段落標題</option>
+                                    <option value="2">單行文字</option>
+                                    <option value="3">多行文字</option>
+                                    <option value="4">單選題</option>
+                                    <option value="5">多選題</option>
+                                    <option value="6">下拉式選單</option>
+                                    <option value="7">圖片題型</option>
+                                </optgroup>
+                                <optgroup label="進階">
+                                    <option value="8">插入圖片</option>
+                                    <option value="9">插入影片</option>
+                                    <option value="10">分隔線</option>
+                                </optgroup>
+                                <optgroup label="身分驗證">
+                                    <option value="11">身分證字號</option>
+                                    <option value="12">E-mail</option>
+                                </optgroup>
+                            </select><div class="TitleRow">
+                                <div class="TitleInputLabel" cid="1" style="display: table-cell;">
+                                </div>
+                                <input cid="1" dataid="2" class="form-inputfield" placeholder="圖片題型" type="text"
+                                    style="display: inline-block;"><div cid="2" class="IsRequiredLabel" style="display: none;">
+                                        <input cid="2" dataid="3" style="margin-left: 10px; display: none;" type="checkbox"
+                                            name="necessary">將這個問題設為必填</div>
+                            </div>
+                            <div class="DescriptionRow">
+                                <div class="DescriptionLabel" cid="3" style="display: table-cell;">
+                                    說明文字</div>
+                                <textarea cid="3" dataid="4" rows="8" cols="0" dir="auto" style="display: inline-block;"></textarea></div>
+                            <ul class="option ui-sortable" cid="4" dataid="5" style="display: none;">
+                            </ul>
+                            <div class="optionTextFieldNew" cid="4" style="display: none;">
+                                <input type="text" placeholder="按一下這裡新增選項" style="cursor: pointer;"><span dataid="6"
+                                    cid="7" style="display: none;">或是<span style="cursor: pointer;" class="addOther">新增「其他」</span></span><div
+                                        cid="7" style="display: none;">
+                                        其他：<input type="text" class="otherOptionText" readonly="readonly" placeholder="答案會顯示在這裡"><span
+                                            class="DeleteBtn">X</span></div>
+                                <div class="perLineCount" cid="5" style="display: none;">
+                                    每行
+                                    <input type="text" dataid="7">
+                                    個選項</div>
+                                <div class="checkCount" cid="6" dataid="8" style="display: none;">
+                                    選取
+                                    <input type="radio" name="checkType3" value="1">至少
+                                    <input type="radio" name="checkType3" value="2">剛好
+                                    <input type="radio" name="checkType3" value="3">最多
+                                    <input type="text">
+                                    項
+                                </div>
+                            </div>
+                            <div cid="8" dataid="10" style="display: block;">
+                                <div>
+                                    <input type="file" accept="image/*" multiple=""></div>
+                                <ul class="ImageList ui-sortable" data-type="MultipleFile">
+                                    <li class="ui-sortable-handle"><span class="DeleteImgBtn">X</span><img src="http://ccmsws19.hamastar.com.tw//001/administrator/onlineform/7a9e156b-50f8-4b31-98a9-09cd592f55db.jpg"></li><li
+                                        class="ui-sortable-handle"><span class="DeleteImgBtn">X</span><img src="http://ccmsws19.hamastar.com.tw//001/administrator/onlineform/00cc6ebe-8469-4829-a245-aeb6697244b4.jpg"></li><li
+                                            class="ui-sortable-handle"><span class="DeleteImgBtn">X</span><img src="http://ccmsws19.hamastar.com.tw//001/administrator/onlineform/ac097e1b-4640-404a-bec3-5e4a26188dbe.jpg"></li></ul>
+                                <div class="MultiImageSetting">
+                                    <div class="imageSelectType">
+                                        <input type="radio" name="imageSelectType3" value="1">
+                                        單選
+                                        <input type="radio" name="imageSelectType3" value="2" checked="checked">
+                                        複選
+                                    </div>
+                                    <div class="imageSelectMulti" style="display: block;">
+                                        選取
+                                        <input type="radio" name="imageSelectMulti3" value="1">至少
+                                        <input type="radio" name="imageSelectMulti3" value="2" checked="checked">剛好
+                                        <input type="radio" name="imageSelectMulti3" value="3">最多
+                                        <input type="text">
+                                        項
+                                    </div>
+                                </div>
+                            </div>
+                            <div cid="9" dataid="11" style="display: none;">
+                                <div>
+                                    <input type="file" accept="image/*"></div>
+                                <ul class="ImageList" data-type="SingleFile">
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="EditBody">
+                    <h3>
+                        <span class="TitleLabel" cid="1" style="display: inline;">單圖片</span><hr cid="0" style="display: none;">
+                    </h3>
+                    <div class="CollapseArea" style="display: none;">
+                        <div class="EditFeatures">
+                            <div class="Copy">
+                            </div>
+                            <div class="Delete">
+                            </div>
+                        </div>
+                        <div class="Content">
+                            <input type="hidden" class="ContentGUID" dataid="0" value="a0093eb3-0ef1-62ce-cca0-c7ee348fe673"><select
+                                dataid="1"><optgroup label="基本"><option value="1">段落標題</option>
+                                    <option value="2">單行文字</option>
+                                    <option value="3">多行文字</option>
+                                    <option value="4">單選題</option>
+                                    <option value="5">多選題</option>
+                                    <option value="6">下拉式選單</option>
+                                    <option value="7">圖片題型</option>
+                                </optgroup>
+                                <optgroup label="進階">
+                                    <option value="8">插入圖片</option>
+                                    <option value="9">插入影片</option>
+                                    <option value="10">分隔線</option>
+                                </optgroup>
+                                <optgroup label="身分驗證">
+                                    <option value="11">身分證字號</option>
+                                    <option value="12">E-mail</option>
+                                </optgroup>
+                            </select><div class="TitleRow">
+                                <div class="TitleInputLabel" cid="1" style="display: table-cell;">
+                                </div>
+                                <input cid="1" dataid="2" class="form-inputfield" placeholder="單圖片" type="text" style="display: inline-block;"><div
+                                    cid="2" class="IsRequiredLabel" style="display: none;">
+                                    <input cid="2" dataid="3" style="margin-left: 10px; display: none;" type="checkbox"
+                                        name="necessary">將這個問題設為必填</div>
+                            </div>
+                            <div class="DescriptionRow">
+                                <div class="DescriptionLabel" cid="3" style="display: table-cell;">
+                                    說明文字</div>
+                                <textarea cid="3" dataid="4" rows="8" cols="0" dir="auto" style="display: inline-block;"></textarea></div>
+                            <ul class="option ui-sortable" cid="4" dataid="5" style="display: none;">
+                            </ul>
+                            <div class="optionTextFieldNew" cid="4" style="display: none;">
+                                <input type="text" placeholder="按一下這裡新增選項" style="cursor: pointer;"><span dataid="6"
+                                    cid="7" style="display: none;">或是<span style="cursor: pointer;" class="addOther">新增「其他」</span></span><div
+                                        cid="7" style="display: none;">
+                                        其他：<input type="text" class="otherOptionText" readonly="readonly" placeholder="答案會顯示在這裡"><span
+                                            class="DeleteBtn">X</span></div>
+                                <div class="perLineCount" cid="5" style="display: none;">
+                                    每行
+                                    <input type="text" dataid="7">
+                                    個選項</div>
+                                <div class="checkCount" cid="6" dataid="8" style="display: none;">
+                                    選取
+                                    <input type="radio" name="checkType4" value="1">至少
+                                    <input type="radio" name="checkType4" value="2">剛好
+                                    <input type="radio" name="checkType4" value="3">最多
+                                    <input type="text">
+                                    項
+                                </div>
+                            </div>
+                            <div cid="8" dataid="10" style="display: none;">
+                                <div>
+                                    <input type="file" accept="image/*" multiple=""></div>
+                                <ul class="ImageList ui-sortable" data-type="MultipleFile">
+                                </ul>
+                                <div class="MultiImageSetting">
+                                    <div class="imageSelectType">
+                                        <input type="radio" name="imageSelectType4" value="1" checked="checked">
+                                        單選
+                                        <input type="radio" name="imageSelectType4" value="2">
+                                        複選
+                                    </div>
+                                    <div class="imageSelectMulti" style="display: none;">
+                                        選取
+                                        <input type="radio" name="imageSelectMulti4" value="1" checked="checked">至少
+                                        <input type="radio" name="imageSelectMulti4" value="2">剛好
+                                        <input type="radio" name="imageSelectMulti4" value="3">最多
+                                        <input type="text">
+                                        項
+                                    </div>
+                                </div>
+                            </div>
+                            <div cid="9" dataid="11" style="display: block;">
+                                <div>
+                                    <input type="file" accept="image/*"></div>
+                                <ul class="ImageList" data-type="SingleFile">
+                                    <li><span class="DeleteImgBtn">X</span><img src="http://ccmsws19.hamastar.com.tw//001/administrator/onlineform/75352343-5e16-44f2-8890-c2a08685e7ce.jpg"></li></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="EditBody">
+                    <h3>
+                        <span class="TitleLabel" cid="1" style="display: inline;">多選</span><hr cid="0" style="display: none;">
+                    </h3>
+                    <div class="CollapseArea" style="display: none;">
+                        <div class="EditFeatures">
+                            <div class="Copy">
+                            </div>
+                            <div class="Delete">
+                            </div>
+                        </div>
+                        <div class="Content">
+                            <input type="hidden" class="ContentGUID" dataid="0" value="886f1051-4e57-77df-915f-91cc95a6d970"><select
+                                dataid="1"><optgroup label="基本"><option value="1">段落標題</option>
+                                    <option value="2">單行文字</option>
+                                    <option value="3">多行文字</option>
+                                    <option value="4">單選題</option>
+                                    <option value="5">多選題</option>
+                                    <option value="6">下拉式選單</option>
+                                    <option value="7">圖片題型</option>
+                                </optgroup>
+                                <optgroup label="進階">
+                                    <option value="8">插入圖片</option>
+                                    <option value="9">插入影片</option>
+                                    <option value="10">分隔線</option>
+                                </optgroup>
+                                <optgroup label="身分驗證">
+                                    <option value="11">身分證字號</option>
+                                    <option value="12">E-mail</option>
+                                </optgroup>
+                            </select><div class="TitleRow">
+                                <div class="TitleInputLabel" cid="1" style="display: table-cell;">
+                                </div>
+                                <input cid="1" dataid="2" class="form-inputfield" placeholder="多選" type="text" style="display: inline-block;"><div
+                                    cid="2" class="IsRequiredLabel" style="display: inline-block;">
+                                    <input cid="2" dataid="3" style="margin-left: 10px; display: inline-block;" type="checkbox"
+                                        name="necessary">將這個問題設為必填</div>
+                            </div>
+                            <div class="DescriptionRow">
+                                <div class="DescriptionLabel" cid="3" style="display: table-cell;">
+                                    說明文字</div>
+                                <textarea cid="3" dataid="4" rows="8" cols="0" dir="auto" style="display: inline-block;"></textarea></div>
+                            <ul class="option ui-sortable" cid="4" dataid="5" style="display: block;">
+                                <li class="optionTextField ui-sortable-handle"><span style="cursor: move;">
+                                    <img src="images/point.png"></span><input type="text"><span class="DeleteBtn">X</span></li><li
+                                        class="optionTextField ui-sortable-handle"><span style="cursor: move;">
+                                            <img src="images/point.png"></span><input type="text"><span class="DeleteBtn">X</span></li></ul>
+                            <div class="optionTextFieldNew" cid="4" style="display: block;">
+                                <input type="text" placeholder="按一下這裡新增選項" style="cursor: pointer;"><span dataid="6"
+                                    cid="7" style="display: inline;">或是<span style="cursor: pointer;" class="addOther">新增「其他」</span></span><div
+                                        class="perLineCount" cid="5" style="display: none;">
+                                        每行
+                                        <input type="text" dataid="7">
+                                        個選項</div>
+                                <div class="checkCount" cid="6" dataid="8" style="display: block;">
+                                    選取
+                                    <input type="radio" name="checkType5" value="1" checked="checked">至少
+                                    <input type="radio" name="checkType5" value="2">剛好
+                                    <input type="radio" name="checkType5" value="3">最多
+                                    <input type="text">
+                                    項
+                                </div>
+                            </div>
+                            <div cid="8" dataid="10" style="display: none;">
+                                <div>
+                                    <input type="file" accept="image/*" multiple=""></div>
+                                <ul class="ImageList ui-sortable" data-type="MultipleFile">
+                                </ul>
+                                <div class="MultiImageSetting">
+                                    <div class="imageSelectType">
+                                        <input type="radio" name="imageSelectType5" value="1" checked="checked">
+                                        單選
+                                        <input type="radio" name="imageSelectType5" value="2">
+                                        複選
+                                    </div>
+                                    <div class="imageSelectMulti" style="display: none;">
+                                        選取
+                                        <input type="radio" name="imageSelectMulti5" value="1" checked="checked">至少
+                                        <input type="radio" name="imageSelectMulti5" value="2">剛好
+                                        <input type="radio" name="imageSelectMulti5" value="3">最多
+                                        <input type="text">
+                                        項
+                                    </div>
+                                </div>
+                            </div>
+                            <div cid="9" dataid="11" style="display: none;">
+                                <div>
+                                    <input type="file" accept="image/*"></div>
+                                <ul class="ImageList" data-type="SingleFile">
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="EditBody">
+                    <h3>
+                        <span class="TitleLabel" cid="1" style="display: inline;">多圖片</span><hr cid="0" style="display: none;">
+                    </h3>
+                    <div class="CollapseArea" style="display: none;">
+                        <div class="EditFeatures">
+                            <div class="Copy">
+                            </div>
+                            <div class="Delete">
+                            </div>
+                        </div>
+                        <div class="Content">
+                            <input type="hidden" class="ContentGUID" dataid="0" value="f83abb26-129e-6761-f6cd-3686557a256c"><select
+                                dataid="1"><optgroup label="基本"><option value="1">段落標題</option>
+                                    <option value="2">單行文字</option>
+                                    <option value="3">多行文字</option>
+                                    <option value="4">單選題</option>
+                                    <option value="5">多選題</option>
+                                    <option value="6">下拉式選單</option>
+                                    <option value="7">圖片題型</option>
+                                </optgroup>
+                                <optgroup label="進階">
+                                    <option value="8">插入圖片</option>
+                                    <option value="9">插入影片</option>
+                                    <option value="10">分隔線</option>
+                                </optgroup>
+                                <optgroup label="身分驗證">
+                                    <option value="11">身分證字號</option>
+                                    <option value="12">E-mail</option>
+                                </optgroup>
+                            </select><div class="TitleRow">
+                                <div class="TitleInputLabel" cid="1" style="display: table-cell;">
+                                </div>
+                                <input cid="1" dataid="2" class="form-inputfield" placeholder="多圖片" type="text" style="display: inline-block;"><div
+                                    cid="2" class="IsRequiredLabel" style="display: none;">
+                                    <input cid="2" dataid="3" style="margin-left: 10px; display: none;" type="checkbox"
+                                        name="necessary">將這個問題設為必填</div>
+                            </div>
+                            <div class="DescriptionRow">
+                                <div class="DescriptionLabel" cid="3" style="display: table-cell;">
+                                    說明文字</div>
+                                <textarea cid="3" dataid="4" rows="8" cols="0" dir="auto" style="display: inline-block;"></textarea></div>
+                            <ul class="option ui-sortable" cid="4" dataid="5" style="display: none;">
+                            </ul>
+                            <div class="optionTextFieldNew" cid="4" style="display: none;">
+                                <input type="text" placeholder="按一下這裡新增選項" style="cursor: pointer;"><span dataid="6"
+                                    cid="7" style="display: none;">或是<span style="cursor: pointer;" class="addOther">新增「其他」</span></span><div
+                                        cid="7" style="display: none;">
+                                        其他：<input type="text" class="otherOptionText" readonly="readonly" placeholder="答案會顯示在這裡"><span
+                                            class="DeleteBtn">X</span></div>
+                                <div class="perLineCount" cid="5" style="display: none;">
+                                    每行
+                                    <input type="text" dataid="7">
+                                    個選項</div>
+                                <div class="checkCount" cid="6" dataid="8" style="display: none;">
+                                    選取
+                                    <input type="radio" name="checkType6" value="1">至少
+                                    <input type="radio" name="checkType6" value="2">剛好
+                                    <input type="radio" name="checkType6" value="3">最多
+                                    <input type="text">
+                                    項
+                                </div>
+                            </div>
+                            <div cid="8" dataid="10" style="display: block;">
+                                <div>
+                                    <input type="file" accept="image/*" multiple=""></div>
+                                <ul class="ImageList ui-sortable" data-type="MultipleFile">
+                                    <li class="ui-sortable-handle"><span class="DeleteImgBtn">X</span><img src="http://ccmsws19.hamastar.com.tw//001/administrator/onlineform/88399b25-2579-4cb8-a5c2-895b5d095621.jpg"></li><li
+                                        class="ui-sortable-handle"><span class="DeleteImgBtn">X</span><img src="http://ccmsws19.hamastar.com.tw//001/administrator/onlineform/7523f9ab-03ab-49af-975b-6fdf36f2c175.jpg"></li><li
+                                            class="ui-sortable-handle"><span class="DeleteImgBtn">X</span><img src="http://ccmsws19.hamastar.com.tw//001/administrator/onlineform/b7981762-b6af-471d-968d-065b83ba4e56.jpg"></li><li
+                                                class="ui-sortable-handle"><span class="DeleteImgBtn">X</span><img src="http://ccmsws19.hamastar.com.tw//001/administrator/onlineform/0f805c16-f3c0-44ec-a910-52039f98ea36.jpg"></li></ul>
+                                <div class="MultiImageSetting">
+                                    <div class="imageSelectType">
+                                        <input type="radio" name="imageSelectType6" value="1" checked="checked">
+                                        單選
+                                        <input type="radio" name="imageSelectType6" value="2">
+                                        複選
+                                    </div>
+                                    <div class="imageSelectMulti" style="display: none;">
+                                        選取
+                                        <input type="radio" name="imageSelectMulti6" value="1">至少
+                                        <input type="radio" name="imageSelectMulti6" value="2">剛好
+                                        <input type="radio" name="imageSelectMulti6" value="3" checked="checked">最多
+                                        <input type="text">
+                                        項
+                                    </div>
+                                </div>
+                            </div>
+                            <div cid="9" dataid="11" style="display: none;">
+                                <div>
+                                    <input type="file" accept="image/*"></div>
+                                <ul class="ImageList" data-type="SingleFile">
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="EditBody">
+                    <h3>
+                        <span class="TitleLabel" cid="1" style="display: inline;">下拉選單</span><hr cid="0"
+                            style="display: none;">
+                    </h3>
+                    <div class="CollapseArea" style="display: none;">
+                        <div class="EditFeatures">
+                            <div class="Copy">
+                            </div>
+                            <div class="Delete">
+                            </div>
+                        </div>
+                        <div class="Content">
+                            <input type="hidden" class="ContentGUID" dataid="0" value="724ceb19-fa2f-9adf-caa6-a1ef2672dd89"><select
+                                dataid="1"><optgroup label="基本"><option value="1">段落標題</option>
+                                    <option value="2">單行文字</option>
+                                    <option value="3">多行文字</option>
+                                    <option value="4">單選題</option>
+                                    <option value="5">多選題</option>
+                                    <option value="6">下拉式選單</option>
+                                    <option value="7">圖片題型</option>
+                                </optgroup>
+                                <optgroup label="進階">
+                                    <option value="8">插入圖片</option>
+                                    <option value="9">插入影片</option>
+                                    <option value="10">分隔線</option>
+                                </optgroup>
+                                <optgroup label="身分驗證">
+                                    <option value="11">身分證字號</option>
+                                    <option value="12">E-mail</option>
+                                </optgroup>
+                            </select><div class="TitleRow">
+                                <div class="TitleInputLabel" cid="1" style="display: table-cell;">
+                                </div>
+                                <input cid="1" dataid="2" class="form-inputfield" placeholder="下拉選單" type="text"
+                                    style="display: inline-block;"><div cid="2" class="IsRequiredLabel" style="display: inline-block;">
+                                        <input cid="2" dataid="3" style="margin-left: 10px; display: inline-block;" type="checkbox"
+                                            name="necessary">將這個問題設為必填</div>
+                            </div>
+                            <div class="DescriptionRow">
+                                <div class="DescriptionLabel" cid="3" style="display: table-cell;">
+                                    說明文字</div>
+                                <textarea cid="3" dataid="4" rows="8" cols="0" dir="auto" style="display: inline-block;"></textarea></div>
+                            <ul class="option ui-sortable" cid="4" dataid="5" style="display: block;">
+                                <li class="optionTextField ui-sortable-handle"><span style="cursor: move;">
+                                    <img src="images/point.png"></span><input type="text"><span class="DeleteBtn">X</span></li><li
+                                        class="optionTextField ui-sortable-handle"><span style="cursor: move;">
+                                            <img src="images/point.png"></span><input type="text"><span class="DeleteBtn">X</span></li><li
+                                                class="optionTextField ui-sortable-handle"><span style="cursor: move;">
+                                                    <img src="images/point.png"></span><input type="text"><span class="DeleteBtn">X</span></li></ul>
+                            <div class="optionTextFieldNew" cid="4" style="display: block;">
+                                <input type="text" placeholder="按一下這裡新增選項" style="cursor: pointer;"><span dataid="6"
+                                    cid="7" style="display: none;">或是<span style="cursor: pointer;" class="addOther">新增「其他」</span></span><div
+                                        cid="7" style="display: none;">
+                                        其他：<input type="text" class="otherOptionText" readonly="readonly" placeholder="答案會顯示在這裡"><span
+                                            class="DeleteBtn">X</span></div>
+                                <div class="perLineCount" cid="5" style="display: none;">
+                                    每行
+                                    <input type="text" dataid="7">
+                                    個選項</div>
+                                <div class="checkCount" cid="6" dataid="8" style="display: none;">
+                                    選取
+                                    <input type="radio" name="checkType7" value="1">至少
+                                    <input type="radio" name="checkType7" value="2">剛好
+                                    <input type="radio" name="checkType7" value="3">最多
+                                    <input type="text">
+                                    項
+                                </div>
+                            </div>
+                            <div cid="8" dataid="10" style="display: none;">
+                                <div>
+                                    <input type="file" accept="image/*" multiple=""></div>
+                                <ul class="ImageList ui-sortable" data-type="MultipleFile">
+                                </ul>
+                                <div class="MultiImageSetting">
+                                    <div class="imageSelectType">
+                                        <input type="radio" name="imageSelectType7" value="1" checked="checked">
+                                        單選
+                                        <input type="radio" name="imageSelectType7" value="2">
+                                        複選
+                                    </div>
+                                    <div class="imageSelectMulti" style="display: none;">
+                                        選取
+                                        <input type="radio" name="imageSelectMulti7" value="1" checked="checked">至少
+                                        <input type="radio" name="imageSelectMulti7" value="2">剛好
+                                        <input type="radio" name="imageSelectMulti7" value="3">最多
+                                        <input type="text">
+                                        項
+                                    </div>
+                                </div>
+                            </div>
+                            <div cid="9" dataid="11" style="display: none;">
+                                <div>
+                                    <input type="file" accept="image/*"></div>
+                                <ul class="ImageList" data-type="SingleFile">
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="EditBody">
+                    <h3>
+                        <span class="TitleLabel" cid="1" style="display: inline;">多行文字</span><hr cid="0"
+                            style="display: none;">
+                    </h3>
+                    <div class="CollapseArea" style="display: none;">
+                        <div class="EditFeatures">
+                            <div class="Copy">
+                            </div>
+                            <div class="Delete">
+                            </div>
+                        </div>
+                        <div class="Content">
+                            <input type="hidden" class="ContentGUID" dataid="0" value="233f5f87-ffb4-319f-12ab-d5219f508f02"><select
+                                dataid="1"><optgroup label="基本"><option value="1">段落標題</option>
+                                    <option value="2">單行文字</option>
+                                    <option value="3">多行文字</option>
+                                    <option value="4">單選題</option>
+                                    <option value="5">多選題</option>
+                                    <option value="6">下拉式選單</option>
+                                    <option value="7">圖片題型</option>
+                                </optgroup>
+                                <optgroup label="進階">
+                                    <option value="8">插入圖片</option>
+                                    <option value="9">插入影片</option>
+                                    <option value="10">分隔線</option>
+                                </optgroup>
+                                <optgroup label="身分驗證">
+                                    <option value="11">身分證字號</option>
+                                    <option value="12">E-mail</option>
+                                </optgroup>
+                            </select><div class="TitleRow">
+                                <div class="TitleInputLabel" cid="1" style="display: table-cell;">
+                                </div>
+                                <input cid="1" dataid="2" class="form-inputfield" placeholder="多行文字" type="text"
+                                    style="display: inline-block;"><div cid="2" class="IsRequiredLabel" style="display: inline-block;">
+                                        <input cid="2" dataid="3" style="margin-left: 10px; display: inline-block;" type="checkbox"
+                                            name="necessary">將這個問題設為必填</div>
+                            </div>
+                            <div class="DescriptionRow">
+                                <div class="DescriptionLabel" cid="3" style="display: table-cell;">
+                                    說明文字</div>
+                                <textarea cid="3" dataid="4" rows="8" cols="0" dir="auto" style="display: inline-block;"></textarea></div>
+                            <ul class="option ui-sortable" cid="4" dataid="5" style="display: none;">
+                            </ul>
+                            <div class="optionTextFieldNew" cid="4" style="display: none;">
+                                <input type="text" placeholder="按一下這裡新增選項" style="cursor: pointer;"><span dataid="6"
+                                    cid="7" style="display: none;">或是<span style="cursor: pointer;" class="addOther">新增「其他」</span></span><div
+                                        cid="7" style="display: none;">
+                                        其他：<input type="text" class="otherOptionText" readonly="readonly" placeholder="答案會顯示在這裡"><span
+                                            class="DeleteBtn">X</span></div>
+                                <div class="perLineCount" cid="5" style="display: none;">
+                                    每行
+                                    <input type="text" dataid="7">
+                                    個選項</div>
+                                <div class="checkCount" cid="6" dataid="8" style="display: none;">
+                                    選取
+                                    <input type="radio" name="checkType8" value="1">至少
+                                    <input type="radio" name="checkType8" value="2">剛好
+                                    <input type="radio" name="checkType8" value="3">最多
+                                    <input type="text">
+                                    項
+                                </div>
+                            </div>
+                            <div cid="8" dataid="10" style="display: none;">
+                                <div>
+                                    <input type="file" accept="image/*" multiple=""></div>
+                                <ul class="ImageList ui-sortable" data-type="MultipleFile">
+                                </ul>
+                                <div class="MultiImageSetting">
+                                    <div class="imageSelectType">
+                                        <input type="radio" name="imageSelectType8" value="1" checked="checked">
+                                        單選
+                                        <input type="radio" name="imageSelectType8" value="2">
+                                        複選
+                                    </div>
+                                    <div class="imageSelectMulti" style="display: none;">
+                                        選取
+                                        <input type="radio" name="imageSelectMulti8" value="1" checked="checked">至少
+                                        <input type="radio" name="imageSelectMulti8" value="2">剛好
+                                        <input type="radio" name="imageSelectMulti8" value="3">最多
+                                        <input type="text">
+                                        項
+                                    </div>
+                                </div>
+                            </div>
+                            <div cid="9" dataid="11" style="display: none;">
+                                <div>
+                                    <input type="file" accept="image/*"></div>
+                                <ul class="ImageList" data-type="SingleFile">
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="EditBody">
+                    <h3>
+                        <span class="TitleLabel" cid="1" style="display: none;"></span>
+                        <hr cid="0" style="display: block;">
+                    </h3>
+                    <div class="CollapseArea" style="display: none;">
+                        <div class="EditFeatures">
+                            <div class="Copy">
+                            </div>
+                            <div class="Delete">
+                            </div>
+                        </div>
+                        <div class="Content">
+                            <input type="hidden" class="ContentGUID" dataid="0" value="2ab09ef8-2a4e-ad40-fd23-86b3188e8613"><select
+                                dataid="1"><optgroup label="基本"><option value="1">段落標題</option>
+                                    <option value="2">單行文字</option>
+                                    <option value="3">多行文字</option>
+                                    <option value="4">單選題</option>
+                                    <option value="5">多選題</option>
+                                    <option value="6">下拉式選單</option>
+                                    <option value="7">圖片題型</option>
+                                </optgroup>
+                                <optgroup label="進階">
+                                    <option value="8">插入圖片</option>
+                                    <option value="9">插入影片</option>
+                                    <option value="10">分隔線</option>
+                                </optgroup>
+                                <optgroup label="身分驗證">
+                                    <option value="11">身分證字號</option>
+                                    <option value="12">E-mail</option>
+                                </optgroup>
+                            </select><div class="TitleRow">
+                                <div class="TitleInputLabel" cid="1" style="display: none;">
+                                </div>
+                                <input cid="1" dataid="2" class="form-inputfield" placeholder="" type="text" style="display: none;"><div
+                                    cid="2" class="IsRequiredLabel" style="display: none;">
+                                    <input cid="2" dataid="3" style="margin-left: 10px; display: none;" type="checkbox"
+                                        name="necessary">將這個問題設為必填</div>
+                            </div>
+                            <div class="DescriptionRow">
+                                <div class="DescriptionLabel" cid="3" style="display: none;">
+                                    說明文字</div>
+                                <textarea cid="3" dataid="4" rows="8" cols="0" dir="auto" style="display: none;"></textarea></div>
+                            <ul class="option ui-sortable" cid="4" dataid="5" style="display: none;">
+                            </ul>
+                            <div class="optionTextFieldNew" cid="4" style="display: none;">
+                                <input type="text" placeholder="按一下這裡新增選項" style="cursor: pointer;"><span dataid="6"
+                                    cid="7" style="display: none;">或是<span style="cursor: pointer;" class="addOther">新增「其他」</span></span><div
+                                        cid="7" style="display: none;">
+                                        其他：<input type="text" class="otherOptionText" readonly="readonly" placeholder="答案會顯示在這裡"><span
+                                            class="DeleteBtn">X</span></div>
+                                <div class="perLineCount" cid="5" style="display: none;">
+                                    每行
+                                    <input type="text" dataid="7">
+                                    個選項</div>
+                                <div class="checkCount" cid="6" dataid="8" style="display: none;">
+                                    選取
+                                    <input type="radio" name="checkType9" value="1">至少
+                                    <input type="radio" name="checkType9" value="2">剛好
+                                    <input type="radio" name="checkType9" value="3">最多
+                                    <input type="text">
+                                    項
+                                </div>
+                            </div>
+                            <div cid="8" dataid="10" style="display: none;">
+                                <div>
+                                    <input type="file" accept="image/*" multiple=""></div>
+                                <ul class="ImageList ui-sortable" data-type="MultipleFile">
+                                </ul>
+                                <div class="MultiImageSetting">
+                                    <div class="imageSelectType">
+                                        <input type="radio" name="imageSelectType9" value="1" checked="checked">
+                                        單選
+                                        <input type="radio" name="imageSelectType9" value="2">
+                                        複選
+                                    </div>
+                                    <div class="imageSelectMulti" style="display: none;">
+                                        選取
+                                        <input type="radio" name="imageSelectMulti9" value="1" checked="checked">至少
+                                        <input type="radio" name="imageSelectMulti9" value="2">剛好
+                                        <input type="radio" name="imageSelectMulti9" value="3">最多
+                                        <input type="text">
+                                        項
+                                    </div>
+                                </div>
+                            </div>
+                            <div cid="9" dataid="11" style="display: none;">
+                                <div>
+                                    <input type="file" accept="image/*"></div>
+                                <ul class="ImageList" data-type="SingleFile">
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="EditBody">
+                    <h3>
+                        <span class="TitleLabel" cid="1" style="display: inline;">身分證字號</span><hr cid="0"
+                            style="display: none;">
+                    </h3>
+                    <div class="CollapseArea" style="display: none;">
+                        <div class="EditFeatures">
+                            <div class="Copy">
+                            </div>
+                            <div class="Delete">
+                            </div>
+                        </div>
+                        <div class="Content">
+                            <input type="hidden" class="ContentGUID" dataid="0" value="d4ebe3dc-4b1b-e64a-4475-a7a12003c168"><select
+                                dataid="1"><optgroup label="基本"><option value="1">段落標題</option>
+                                    <option value="2">單行文字</option>
+                                    <option value="3">多行文字</option>
+                                    <option value="4">單選題</option>
+                                    <option value="5">多選題</option>
+                                    <option value="6">下拉式選單</option>
+                                    <option value="7">圖片題型</option>
+                                </optgroup>
+                                <optgroup label="進階">
+                                    <option value="8">插入圖片</option>
+                                    <option value="9">插入影片</option>
+                                    <option value="10">分隔線</option>
+                                </optgroup>
+                                <optgroup label="身分驗證">
+                                    <option value="11">身分證字號</option>
+                                    <option value="12">E-mail</option>
+                                </optgroup>
+                            </select><div class="TitleRow">
+                                <div class="TitleInputLabel" cid="1" style="display: table-cell;">
+                                </div>
+                                <input cid="1" dataid="2" class="form-inputfield" placeholder="身分證字號" type="text"
+                                    style="display: inline-block;"><div cid="2" class="IsRequiredLabel" style="display: inline-block;">
+                                        <input cid="2" dataid="3" style="margin-left: 10px; display: inline-block;" type="checkbox"
+                                            name="necessary">將這個問題設為必填</div>
+                            </div>
+                            <div class="DescriptionRow">
+                                <div class="DescriptionLabel" cid="3" style="display: table-cell;">
+                                    說明文字</div>
+                                <textarea cid="3" dataid="4" rows="8" cols="0" dir="auto" style="display: inline-block;"></textarea></div>
+                            <ul class="option ui-sortable" cid="4" dataid="5" style="display: none;">
+                            </ul>
+                            <div class="optionTextFieldNew" cid="4" style="display: none;">
+                                <input type="text" placeholder="按一下這裡新增選項" style="cursor: pointer;"><span dataid="6"
+                                    cid="7" style="display: none;">或是<span style="cursor: pointer;" class="addOther">新增「其他」</span></span><div
+                                        cid="7" style="display: none;">
+                                        其他：<input type="text" class="otherOptionText" readonly="readonly" placeholder="答案會顯示在這裡"><span
+                                            class="DeleteBtn">X</span></div>
+                                <div class="perLineCount" cid="5" style="display: none;">
+                                    每行
+                                    <input type="text" dataid="7">
+                                    個選項</div>
+                                <div class="checkCount" cid="6" dataid="8" style="display: none;">
+                                    選取
+                                    <input type="radio" name="checkType10" value="1">至少
+                                    <input type="radio" name="checkType10" value="2">剛好
+                                    <input type="radio" name="checkType10" value="3">最多
+                                    <input type="text">
+                                    項
+                                </div>
+                            </div>
+                            <div cid="8" dataid="10" style="display: none;">
+                                <div>
+                                    <input type="file" accept="image/*" multiple=""></div>
+                                <ul class="ImageList ui-sortable" data-type="MultipleFile">
+                                </ul>
+                                <div class="MultiImageSetting">
+                                    <div class="imageSelectType">
+                                        <input type="radio" name="imageSelectType10" value="1" checked="checked">
+                                        單選
+                                        <input type="radio" name="imageSelectType10" value="2">
+                                        複選
+                                    </div>
+                                    <div class="imageSelectMulti" style="display: none;">
+                                        選取
+                                        <input type="radio" name="imageSelectMulti10" value="1" checked="checked">至少
+                                        <input type="radio" name="imageSelectMulti10" value="2">剛好
+                                        <input type="radio" name="imageSelectMulti10" value="3">最多
+                                        <input type="text">
+                                        項
+                                    </div>
+                                </div>
+                            </div>
+                            <div cid="9" dataid="11" style="display: none;">
+                                <div>
+                                    <input type="file" accept="image/*"></div>
+                                <ul class="ImageList" data-type="SingleFile">
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="EditBody">
+                    <h3>
+                        <span class="TitleLabel" cid="1" style="display: inline;">Email輸入</span><hr cid="0"
+                            style="display: none;">
+                    </h3>
+                    <div class="CollapseArea" style="display: none;">
+                        <div class="EditFeatures">
+                            <div class="Copy">
+                            </div>
+                            <div class="Delete">
+                            </div>
+                        </div>
+                        <div class="Content">
+                            <input type="hidden" class="ContentGUID" dataid="0" value="937e0959-82d2-a4ce-4881-9ac57298f7e4"><select
+                                dataid="1"><optgroup label="基本"><option value="1">段落標題</option>
+                                    <option value="2">單行文字</option>
+                                    <option value="3">多行文字</option>
+                                    <option value="4">單選題</option>
+                                    <option value="5">多選題</option>
+                                    <option value="6">下拉式選單</option>
+                                    <option value="7">圖片題型</option>
+                                </optgroup>
+                                <optgroup label="進階">
+                                    <option value="8">插入圖片</option>
+                                    <option value="9">插入影片</option>
+                                    <option value="10">分隔線</option>
+                                </optgroup>
+                                <optgroup label="身分驗證">
+                                    <option value="11">身分證字號</option>
+                                    <option value="12">E-mail</option>
+                                </optgroup>
+                            </select><div class="TitleRow">
+                                <div class="TitleInputLabel" cid="1" style="display: table-cell;">
+                                </div>
+                                <input cid="1" dataid="2" class="form-inputfield" placeholder="Email輸入" type="text"
+                                    style="display: inline-block;"><div cid="2" class="IsRequiredLabel" style="display: inline-block;">
+                                        <input cid="2" dataid="3" style="margin-left: 10px; display: inline-block;" type="checkbox"
+                                            name="necessary">將這個問題設為必填</div>
+                            </div>
+                            <div class="DescriptionRow">
+                                <div class="DescriptionLabel" cid="3" style="display: table-cell;">
+                                    說明文字</div>
+                                <textarea cid="3" dataid="4" rows="8" cols="0" dir="auto" style="display: inline-block;"></textarea></div>
+                            <ul class="option ui-sortable" cid="4" dataid="5" style="display: none;">
+                            </ul>
+                            <div class="optionTextFieldNew" cid="4" style="display: none;">
+                                <input type="text" placeholder="按一下這裡新增選項" style="cursor: pointer;"><span dataid="6"
+                                    cid="7" style="display: none;">或是<span style="cursor: pointer;" class="addOther">新增「其他」</span></span><div
+                                        cid="7" style="display: none;">
+                                        其他：<input type="text" class="otherOptionText" readonly="readonly" placeholder="答案會顯示在這裡"><span
+                                            class="DeleteBtn">X</span></div>
+                                <div class="perLineCount" cid="5" style="display: none;">
+                                    每行
+                                    <input type="text" dataid="7">
+                                    個選項</div>
+                                <div class="checkCount" cid="6" dataid="8" style="display: none;">
+                                    選取
+                                    <input type="radio" name="checkType11" value="1">至少
+                                    <input type="radio" name="checkType11" value="2">剛好
+                                    <input type="radio" name="checkType11" value="3">最多
+                                    <input type="text">
+                                    項
+                                </div>
+                            </div>
+                            <div cid="8" dataid="10" style="display: none;">
+                                <div>
+                                    <input type="file" accept="image/*" multiple=""></div>
+                                <ul class="ImageList ui-sortable" data-type="MultipleFile">
+                                </ul>
+                                <div class="MultiImageSetting">
+                                    <div class="imageSelectType">
+                                        <input type="radio" name="imageSelectType11" value="1" checked="checked">
+                                        單選
+                                        <input type="radio" name="imageSelectType11" value="2">
+                                        複選
+                                    </div>
+                                    <div class="imageSelectMulti" style="display: none;">
+                                        選取
+                                        <input type="radio" name="imageSelectMulti11" value="1" checked="checked">至少
+                                        <input type="radio" name="imageSelectMulti11" value="2">剛好
+                                        <input type="radio" name="imageSelectMulti11" value="3">最多
+                                        <input type="text">
+                                        項
+                                    </div>
+                                </div>
+                            </div>
+                            <div cid="9" dataid="11" style="display: none;">
+                                <div>
+                                    <input type="file" accept="image/*"></div>
+                                <ul class="ImageList" data-type="SingleFile">
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <select class="addElement">
+                    <optgroup label="基本">
+                        <option value="0">新增項目</option>
+                        <option value="1">段落標題</option>
+                        <option value="2">單行文字</option>
+                        <option value="3">多行文字</option>
+                        <option value="4">單選題</option>
+                        <option value="5">多選題</option>
+                        <option value="6">下拉式選單</option>
+                        <option value="7">圖片題型</option>
+                    </optgroup>
+                    <optgroup label="進階">
+                        <option value="8">插入圖片</option>
+                        <option value="10">分隔線</option>
+                    </optgroup>
+                    <optgroup label="身分驗證">
+                        <option value="11">身分證字號</option>
+                        <option value="12">E-mail</option>
+                    </optgroup>
+                </select>
+                <div style="width: 100%; text-align: center;">
+                    <input type="submit" name="btnSave" value="儲存表單" onclick="htmlToJson();" id="btnSave">
+                </div>
+                <input type="hidden" name="hidFormatJson" id="hidFormatJson" value="[{&quot;guid&quot;:&quot;6aa4e15c-1ade-7d64-405c-f207fab6c0c9&quot;,&quot;Type&quot;:&quot;1&quot;,&quot;Title&quot;:&quot;表單測試&quot;,&quot;Required&quot;:false,&quot;Description&quot;:&quot;測試&quot;,&quot;option&quot;:[],&quot;hasOther&quot;:true,&quot;optionsPerLine&quot;:0,&quot;optionCountType&quot;:0,&quot;optionCount&quot;:0,&quot;multiImage&quot;:[],&quot;imageSelectType&quot;:1,&quot;imageSelectMulti&quot;:1,&quot;imageSelectCount&quot;:&quot;表單測試&quot;},{&quot;guid&quot;:&quot;1157726c-b72d-22d0-07c5-3e3a9b0fcb90&quot;,&quot;Type&quot;:&quot;2&quot;,&quot;Title&quot;:&quot;問題1&quot;,&quot;Required&quot;:true,&quot;Description&quot;:&quot;11111&quot;,&quot;option&quot;:[],&quot;hasOther&quot;:true,&quot;optionsPerLine&quot;:0,&quot;optionCountType&quot;:0,&quot;optionCount&quot;:0,&quot;multiImage&quot;:[],&quot;imageSelectType&quot;:1,&quot;imageSelectMulti&quot;:1,&quot;imageSelectCount&quot;:&quot;問題1&quot;},{&quot;guid&quot;:&quot;02887e71-3b40-1849-75ab-5828f18ffdb2&quot;,&quot;Type&quot;:&quot;4&quot;,&quot;Title&quot;:&quot;Q3&quot;,&quot;Required&quot;:false,&quot;Description&quot;:&quot;單選&quot;,&quot;option&quot;:[&quot;選項1&quot;,&quot;選項3&quot;,&quot;選項6&quot;,&quot;選項7&quot;,&quot;選項5&quot;,&quot;選項6&quot;],&quot;hasOther&quot;:false,&quot;optionsPerLine&quot;:2,&quot;optionCountType&quot;:0,&quot;optionCount&quot;:0,&quot;multiImage&quot;:[],&quot;imageSelectType&quot;:1,&quot;imageSelectMulti&quot;:1,&quot;imageSelectCount&quot;:&quot;Q3&quot;},{&quot;guid&quot;:&quot;f0f06ceb-5143-5ac1-db49-48558eda1192&quot;,&quot;Type&quot;:&quot;7&quot;,&quot;Title&quot;:&quot;圖片題型&quot;,&quot;Required&quot;:false,&quot;Description&quot;:&quot;123&quot;,&quot;option&quot;:[],&quot;hasOther&quot;:true,&quot;optionsPerLine&quot;:0,&quot;optionCountType&quot;:0,&quot;optionCount&quot;:0,&quot;multiImage&quot;:[&quot;http://ccmsws19.hamastar.com.tw//001/administrator/onlineform/7a9e156b-50f8-4b31-98a9-09cd592f55db.jpg&quot;,&quot;http://ccmsws19.hamastar.com.tw//001/administrator/onlineform/00cc6ebe-8469-4829-a245-aeb6697244b4.jpg&quot;,&quot;http://ccmsws19.hamastar.com.tw//001/administrator/onlineform/ac097e1b-4640-404a-bec3-5e4a26188dbe.jpg&quot;],&quot;imageSelectType&quot;:2,&quot;imageSelectMulti&quot;:2,&quot;imageSelectCount&quot;:&quot;2&quot;},{&quot;guid&quot;:&quot;a0093eb3-0ef1-62ce-cca0-c7ee348fe673&quot;,&quot;Type&quot;:&quot;8&quot;,&quot;Title&quot;:&quot;單圖片&quot;,&quot;Required&quot;:false,&quot;Description&quot;:&quot;456&quot;,&quot;option&quot;:[],&quot;hasOther&quot;:true,&quot;optionsPerLine&quot;:0,&quot;optionCountType&quot;:0,&quot;optionCount&quot;:0,&quot;singleImage&quot;:&quot;http://ccmsws19.hamastar.com.tw//001/administrator/onlineform/75352343-5e16-44f2-8890-c2a08685e7ce.jpg&quot;,&quot;multiImage&quot;:[],&quot;imageSelectType&quot;:1,&quot;imageSelectMulti&quot;:1,&quot;imageSelectCount&quot;:&quot;單圖片&quot;},{&quot;guid&quot;:&quot;886f1051-4e57-77df-915f-91cc95a6d970&quot;,&quot;Type&quot;:&quot;5&quot;,&quot;Title&quot;:&quot;多選&quot;,&quot;Required&quot;:false,&quot;Description&quot;:&quot;&quot;,&quot;option&quot;:[&quot;&quot;,&quot;&quot;],&quot;hasOther&quot;:false,&quot;optionsPerLine&quot;:0,&quot;optionCountType&quot;:1,&quot;optionCount&quot;:0,&quot;multiImage&quot;:[],&quot;imageSelectType&quot;:1,&quot;imageSelectMulti&quot;:1,&quot;imageSelectCount&quot;:&quot;多選&quot;},{&quot;guid&quot;:&quot;f83abb26-129e-6761-f6cd-3686557a256c&quot;,&quot;Type&quot;:&quot;7&quot;,&quot;Title&quot;:&quot;多圖片&quot;,&quot;Required&quot;:false,&quot;Description&quot;:&quot;999&quot;,&quot;option&quot;:[],&quot;hasOther&quot;:true,&quot;optionsPerLine&quot;:0,&quot;optionCountType&quot;:0,&quot;optionCount&quot;:0,&quot;multiImage&quot;:[&quot;http://ccmsws19.hamastar.com.tw//001/administrator/onlineform/88399b25-2579-4cb8-a5c2-895b5d095621.jpg&quot;,&quot;http://ccmsws19.hamastar.com.tw//001/administrator/onlineform/7523f9ab-03ab-49af-975b-6fdf36f2c175.jpg&quot;,&quot;http://ccmsws19.hamastar.com.tw//001/administrator/onlineform/b7981762-b6af-471d-968d-065b83ba4e56.jpg&quot;,&quot;http://ccmsws19.hamastar.com.tw//001/administrator/onlineform/0f805c16-f3c0-44ec-a910-52039f98ea36.jpg&quot;],&quot;imageSelectType&quot;:1,&quot;imageSelectMulti&quot;:3,&quot;imageSelectCount&quot;:&quot;2&quot;},{&quot;guid&quot;:&quot;724ceb19-fa2f-9adf-caa6-a1ef2672dd89&quot;,&quot;Type&quot;:&quot;6&quot;,&quot;Title&quot;:&quot;下拉選單&quot;,&quot;Required&quot;:false,&quot;Description&quot;:&quot;1234&quot;,&quot;option&quot;:[&quot;選項1&quot;,&quot;選項2&quot;,&quot;選項3&quot;],&quot;hasOther&quot;:true,&quot;optionsPerLine&quot;:0,&quot;optionCountType&quot;:0,&quot;optionCount&quot;:0,&quot;multiImage&quot;:[],&quot;imageSelectType&quot;:1,&quot;imageSelectMulti&quot;:1,&quot;imageSelectCount&quot;:&quot;0&quot;},{&quot;guid&quot;:&quot;233f5f87-ffb4-319f-12ab-d5219f508f02&quot;,&quot;Type&quot;:&quot;3&quot;,&quot;Title&quot;:&quot;多行文字&quot;,&quot;Required&quot;:false,&quot;Description&quot;:&quot;999&quot;,&quot;option&quot;:[],&quot;hasOther&quot;:true,&quot;optionsPerLine&quot;:0,&quot;optionCountType&quot;:0,&quot;optionCount&quot;:0,&quot;multiImage&quot;:[],&quot;imageSelectType&quot;:1,&quot;imageSelectMulti&quot;:1,&quot;imageSelectCount&quot;:&quot;0&quot;},{&quot;guid&quot;:&quot;2ab09ef8-2a4e-ad40-fd23-86b3188e8613&quot;,&quot;Type&quot;:&quot;10&quot;,&quot;Title&quot;:&quot;&quot;,&quot;Required&quot;:false,&quot;Description&quot;:&quot;&quot;,&quot;option&quot;:[],&quot;hasOther&quot;:true,&quot;optionsPerLine&quot;:0,&quot;optionCountType&quot;:0,&quot;optionCount&quot;:0,&quot;multiImage&quot;:[],&quot;imageSelectType&quot;:1,&quot;imageSelectMulti&quot;:1,&quot;imageSelectCount&quot;:&quot;0&quot;},{&quot;guid&quot;:&quot;d4ebe3dc-4b1b-e64a-4475-a7a12003c168&quot;,&quot;Type&quot;:&quot;11&quot;,&quot;Title&quot;:&quot;身分證字號&quot;,&quot;Required&quot;:false,&quot;Description&quot;:&quot;&quot;,&quot;option&quot;:[],&quot;hasOther&quot;:true,&quot;optionsPerLine&quot;:0,&quot;optionCountType&quot;:0,&quot;optionCount&quot;:0,&quot;multiImage&quot;:[],&quot;imageSelectType&quot;:1,&quot;imageSelectMulti&quot;:1,&quot;imageSelectCount&quot;:&quot;0&quot;},{&quot;guid&quot;:&quot;937e0959-82d2-a4ce-4881-9ac57298f7e4&quot;,&quot;Type&quot;:&quot;12&quot;,&quot;Title&quot;:&quot;Email輸入&quot;,&quot;Required&quot;:false,&quot;Description&quot;:&quot;&quot;,&quot;option&quot;:[],&quot;hasOther&quot;:true,&quot;optionsPerLine&quot;:0,&quot;optionCountType&quot;:0,&quot;optionCount&quot;:0,&quot;multiImage&quot;:[],&quot;imageSelectType&quot;:1,&quot;imageSelectMulti&quot;:1,&quot;imageSelectCount&quot;:&quot;0&quot;}]">
+            </div>
+        </div>
+    </div>
+    <script>
+        var display = {
+            "1": [1, 3],
+            "2": [1, 2, 3],
+            "3": [1, 2, 3],
+            "4": [1, 2, 3, 4, 5, 7],
+            "5": [1, 2, 3, 4, 6, 7],
+            "6": [1, 2, 3, 4],
+            "7": [1, 3, 8],
+            "8": [1, 3, 9],
+            "9": [],
+            "10": [0],
+            "11": [1, 2, 3],
+            "12": [1, 2, 3]
+        };
+        var form = [];
+
+
+        function GenContent(guid, Title, Description, Type, option, optionsPerLine, optionCount, optionCountType, Required, hasOther, singleImage, multiImage, imageSelectType, imageSelectMulti, imageSelectCount) {
+
+            var $EditBody = new UI_Div('EditBody');
+            var $Content = new UI_Div('Content');
+
+            $Content.append(UI_Guid(guid));
+            $EditBody.append(UI_Title(Title));
+            $Content.append(UI_DdlType(Type));
+
+            //$Edit = UI_Div('Edit');
+            $Copy = new UI_Div('Copy');
+            $Copy.click(function () {
+                copyBlock($EditBody);
+            });
+
+            $Delete = new UI_Div('Delete');
+            $Delete.click(function () {
+                $EditBody.remove();
+            });
+
+            $EditFeatures = UI_Div('EditFeatures');
+            $EditFeatures.append($Copy);
+            $EditFeatures.append($Delete);
+
+            $TitleInputLabel = UI_Div('TitleInputLabel', '1');
+            var $TitleInput = $('<input cid="1"  dataid="2" class="form-inputfield" placeholder="' + Title + '" type="text" >');
+            if (Title != '' && Title != '無標題問題')
+                $TitleInput.val(Title);
+
+
+            var $IsRequired = $('<input cid="2"  dataid="3" style="margin-left:10px;" type="checkbox" name="necessary">');
+            if (Required)
+                $IsRequired.prop("checked", true);
+
+            var $IsRequiredLabel = $('<div cid="2" class="IsRequiredLabel" style="display:inline-block;">將這個問題設為必填</div>');
+            $IsRequiredLabel.prepend($IsRequired);
+
+            $DescriptionLabel = UI_Div('DescriptionLabel', '3', '說明文字');
+            var $Description = $('<textarea cid="3"  dataid="4" rows="8" cols="0" dir="auto"></textarea>');
+            $Description.val(Description);
+
+            $TitleRow = UI_Div('TitleRow');
+
+            $TitleRow.append($TitleInputLabel);
+            $TitleRow.append($TitleInput);
+            $TitleRow.append($IsRequiredLabel);
+
+            $Content.append($TitleRow);
+
+
+            $DescriptionRow = UI_Div('DescriptionRow');
+
+            $DescriptionRow.append($DescriptionLabel);
+            $DescriptionRow.append($Description);
+
+            $Content.append($DescriptionRow);
+
+
+            $TitleInput.on('input', function () {
+                var t = $(this).val();
+                if (t != '')
+                    $(this).parent().parent().parent().parent().find('.TitleLabel').html(t);
+                else
+                    $(this).parent().parent().parent().parent().find('.TitleLabel').html('無標題問題');
+            });
+
+
+            var $option = $('<ul class="option" cid="4"  dataid="5"></ul>');
+            var i = 0;
+            for (; i < option.length; i++) {
+                var OptionList = _$DetailOption.clone();
+                OptionList.find('input').val(option[i]);
+                var $DeleteBtn = $('<span class="DeleteBtn">X</span>');
+                OptionList.append($DeleteBtn);
+                $DeleteBtn.click(function () {
+                    $(this).parent().remove();
+                });
+                $option.append(OptionList);
+            }
+
+            var newOption = $('<div><input type="text"></div>');
+            var otherOption = $('<span dataid="6" cid="7">或是<span  style="cursor: pointer;" class="addOther">新增「其他」</span></span>');
+            newOption.attr('class', 'optionTextFieldNew');
+            newOption.find('input').attr('placeholder', '按一下這裡新增選項').attr("style", "cursor: pointer;");
+            newOption.find('span').remove();
+            newOption.find('input').click(function () {
+                var newOption1 = _$DetailOption.clone();
+                var $DeleteBtn = $('<span class="DeleteBtn">X</span>');
+                newOption1.append($DeleteBtn);
+                $DeleteBtn.click(function () {
+                    //console.log(newOption1);
+                    $(this).parent().remove();
+                });
+                $(this).parent().parent().find('.option').append(newOption1);
+                newOption1.find('input').val('選項' + ($(this).parent().parent().find('.optionTextField').length));
+                newOption1.find('input').select();
+            });
+
+
+            otherOption.click(function () {
+                var otherOptionText = $('<div cid="7">其他：<input type="text" class="otherOptionText"></div>');
+                var $DeleteBtn = $('<span class="DeleteBtn">X</span>');
+                otherOptionText.append($DeleteBtn);
+                $DeleteBtn.click(function () {
+                    otherOption.show();
+                    otherOptionText.remove();
+                });
+                otherOptionText.find('input').attr("readonly", "true").attr('placeholder', '答案會顯示在這裡');
+                $(this).after(otherOptionText);
+                $(this).hide();
+            });
+
+
+            var perLineCount = $('<div class="perLineCount" cid="5">每行 <input type="text" dataid="7"> 個選項</div>');
+            if (optionsPerLine > 0)
+                perLineCount.find('input').val(optionsPerLine);
+
+            var checkCount = UI_MultiSelectSetting('checkCount', 6, 8, "checkType" + $('#EditArea').children().length);
+
+            if (optionCountType > 0) {
+                checkCount.find("input[name*=checkType][value='" + optionCountType + "']").attr('checked', true);
+                checkCount.find('.checkCountText').val(optionCount);
+            }
+
+            newOption.attr("cid", "4");
+            newOption.append(otherOption);
+            newOption.append(perLineCount);
+            newOption.append(checkCount);
+            $option.sortable();
+
+            $Content.append($option);
+            $Content.append(newOption);
+
+            var $ImageRadioArea = $('<div cid="8" dataid="10"></div>');
+            var $ImageUploadMulti = $('<div><input type="file"  accept="image/*" multiple></div>');
+
+
+            $ImageUploadMulti.find('input').change(function () {
+                SendToServer($(this));
+            });
+
+            $ImageList = $('<ul class="ImageList" data-type="MultipleFile" ></ul>');
+            if (multiImage != undefined)
+                for (; i < multiImage.length; i++) {
+                    $img = UI_Img(multiImage[i]);
+                    $ImageList.append($img);
+                }
+
+            $ImageRadioArea.append($ImageUploadMulti);
+
+            $ImageList.sortable({
+                //                axis: "y",
+                stop: function (event, ui) {
+                    // IE doesn't register the blur when sorting
+                    // so trigger focusout handlers to remove .ui-state-focus
+                    ui.item.children("li").triggerHandler("focusout");
+                }
+            });
+            $ImageRadioArea.append($ImageList);
+
+            var $imageSelectType = $('<div class="imageSelectType"> <input type="radio" name="imageSelectType' + $('#EditArea').children().length + '" value="1"> 單選   <input type="radio" name="imageSelectType' + $('#EditArea').children().length + '" value="2"> 複選  </div>');
+
+            var $imageSelectCount = UI_MultiSelectSetting('imageSelectMulti', 0, 0, 'imageSelectMulti' + $('#EditArea').children().length);
+
+            $imageSelectType.find("input[name*=imageSelectType]:radio").change(function () {
+                if (this.value == 2)
+                    $(this).parent().parent().find('.imageSelectMulti').show();
+                else
+                    $(this).parent().parent().find('.imageSelectMulti').hide();
+            });
+
+            var $MultiImageSetting = $('<div class="MultiImageSetting"></div>');
+            $MultiImageSetting.append($imageSelectType);
+            $MultiImageSetting.append($imageSelectCount);
+            $ImageRadioArea.append($MultiImageSetting);
+
+            if (imageSelectType > 0) {
+                $MultiImageSetting.find("input[name*=imageSelectType][value='" + imageSelectType + "']").attr('checked', true);
+                $MultiImageSetting.find("input[name*=imageSelectMulti][value='" + imageSelectMulti + "']").attr('checked', true);
+                $MultiImageSetting.find('input[type=text]').val(imageSelectCount);
+            }
+
+            if (imageSelectType == 2)
+                $MultiImageSetting.find('.imageSelectMulti').show();
+            else
+                $MultiImageSetting.find('.imageSelectMulti').hide();
+
+
+            $Content.append($ImageRadioArea);
+
+
+            $ImageArea = $('<div cid="9" dataid="11"></div>');
+            $ImageUpload = $('<div><input type="file"  accept="image/*"></div>');
+
+
+            $ImageUpload.find('input').change(function () {
+                SendToServer($(this));
+            });
+
+            $SingleImage = $('<ul class="ImageList" data-type="SingleFile" ></ul>');
+            $ImageArea.append($ImageUpload);
+
+            if (singleImage != undefined && singleImage != '')
+                $SingleImage.append(UI_Img(singleImage));
+
+            $ImageArea.append($SingleImage);
+            $Content.append($ImageArea);
+
+            CollapseArea = $('<div class="CollapseArea"></div>');
+            CollapseArea.append($EditFeatures);
+            CollapseArea.append($Content);
+
+            $EditBody.append(CollapseArea);
+
+            if (hasOther) {
+                otherOption.click();
+            }
+
+            return $EditBody;
+
+        }
+
+        function copyBlock(block) {
+            var obj = uiToObj(block);
+            console.log(obj);
+            obj.guid = guid();
+            var $Content = new GenContent(obj.guid, obj.Title, obj.Description, obj.Type, obj.option, obj.optionsPerLine, obj.optionCount, obj.optionCountType, obj.Required, obj.hasOther, obj.singleImage, obj.multiImage, obj.imageSelectType, obj.imageSelectMulti, obj.imageSelectCount);
+            block.after($Content);
+            $Content.find('[cid]').hide();
+            $(display[obj.Type]).each(function (i, v) {
+                $Content.find('[cid="' + v + '"]').show();
+            });
+            collapsable();
+        }
+
+        function add(obj) {
+            /*開發中臨時塞值*/
+            //            if(obj.guid == undefined)
+            //                obj.guid = guid();
+            //            if (obj.imageSelectCount == undefined)
+            //                obj.imageSelectCount = 0;
+            //            if (obj.imageSelectType == undefined)
+            //                obj.imageSelectType = 1;
+            //            if (obj.imageSelectMulti == undefined)
+            //                obj.imageSelectMulti = 1;
+
+            var $Content = new GenContent(obj.guid, obj.Title, obj.Description, obj.Type, obj.option, obj.optionsPerLine, obj.optionCount, obj.optionCountType, obj.Required, obj.hasOther, obj.singleImage, obj.multiImage, obj.imageSelectType, obj.imageSelectMulti, obj.imageSelectCount);
+            $("#EditArea").append($Content);
+            //$("#EditArea").accordion("refresh");
+            //$("#EditArea").accordion("option", "active", $("#EditArea").children().length - 1);
+
+            $Content.find('[cid]').hide();
+            $(display[obj.Type]).each(function (i, v) {
+                $Content.find('[cid="' + v + '"]').show();
+            })
+
+            collapsable();
+        }
+
+        function Obj(type, guid) {
+            this.guid = guid;
+            this.Title = '無標題問題';
+            this.Description = '';
+            this.Type = type;
+            this.option = [];
+            this.optionsPerLine = 0;
+            this.optionCount = 0;
+            // 1:至少  2:剛好  3:最多
+            this.optionCountType = 0;
+            this.Required = false;
+            this.hasOther = false;
+            this.singleImage = '';
+            this.multiImage = [];
+            this.imageSelectType = 1;
+            this.imageSelectMulti = 1;
+            this.imageSelectCount = 0;
+            return this;
+        }
+
+        function JsonToHtml() {
+            form = JSON.parse($("input[name*='hidFormatJson']").val());
+            for (var i = 0; i < form.length; i++)
+                add(form[i]);
+        }
+
+        function uiToObj(content) {
+            var obj = {};
+            //console.log(obj);
+
+            //console.log($(this).find('[dataid="1"]').val());
+            obj.guid = content.find('[dataid="0"]').val();
+            obj.Type = content.find('[dataid="1"]').val();
+            obj.Title = content.find('[dataid="2"]').val();
+            obj.Required = content.find('[dataid="3"]').prop("checked");
+            obj.Description = content.find('[dataid="4"]').val();
+            obj.option = [];
+            content.find('[dataid="5"]').find('.optionTextField').each(function (k, v) {
+                obj.option.push($(this).find('input').val());
+            });
+            var hasOther = false;
+            if (content.find('[dataid="6"]').attr("style") == "display: none;")
+                hasOther = true;
+            obj.hasOther = hasOther;
+            var perLineCount = parseInt(content.find('[dataid="7"]').val());
+            //console.log(perLineCount);
+            if (perLineCount == null || isNaN(perLineCount))
+                perLineCount = 0;
+
+            obj.optionsPerLine = perLineCount;
+
+            var ctype = parseInt(content.find('[dataid="8"]').find('input:radio:checked[name*="checkType"]').val());
+            if (ctype == null || isNaN(ctype))
+                ctype = 0;
+            obj.optionCountType = ctype;
+
+            var optionCount = parseInt(content.find('[dataid="9"]').val());
+            if (optionCount == null || isNaN(optionCount))
+                optionCount = 0;
+            obj.optionCount = optionCount;
+
+            obj.singleImage = content.find('[dataid="11"]').find('img').attr("src");
+
+            obj.multiImage = [];
+            content.find('[dataid="10"]').find('img').each(function (k, v) {
+                //console.log($(this).attr('src'));
+                obj.multiImage.push($(this).attr('src'));
+            });
+
+            var imgSelectType = parseInt(content.find('[dataid="10"]').find('input:radio:checked[name*="imageSelectType"]').val());
+            var imgMultiType = parseInt(content.find('[dataid="10"]').find('input:radio:checked[name*="imageSelectMulti"]').val());
+            obj.imageSelectType = imgSelectType;
+            obj.imageSelectMulti = imgMultiType;
+
+            obj.imageSelectCount = content.find('[dataid="10"]').find('input[type=text]').val();
+            return obj;
+        }
+
+        function htmlToJson() {
+            form = [];
+            $('#EditArea').find('.Content').each(function (k, v) {
+                form.push(uiToObj($(this)));
+            });
+            //console.log(JSON.stringify(form));
+            $("input[name*='hidFormatJson']").val(JSON.stringify(form));
+        }
+
+        //        function Genhtml() {
+        //            $('#EditArea').html('');
+
+        //            $(form).each(function (k, v) {
+        //                
+        //                $divDelete.click(function () {
+        ////                form.splice(k, 1);
+        ////                Genhtml();
+        //                })                
+
+        //            });
+        //            
+        //        }
+
+        function guid() {
+
+            return s4() + s4() + '-' + s4() + '-' + s4() + '-' +
+            s4() + '-' + s4() + s4() + s4();
+        }
+        function s4() {
+            return Math.floor((1 + Math.random()) * 0x10000)
+              .toString(16)
+              .substring(1);
+        }
+
+        $(function () {
+            $(".addElement").change(function () {
+                if ($(".addElement").val() != "0") {
+                    var _guid = guid();
+                    add(new Obj($(".addElement").val(), _guid));
+                }
+                $(".addElement").val("0");
+            });
+
+            sortable();
+            JsonToHtml();
+            collapsable();
+
+
+            $('.EditBody > h3').each(function () {
+                $(this).click();
+            });
+
+
+
+            //            $('.EditBody > h3').click(function (e) {
+            //                $Div = $(this).parent().find('.CollapseArea');
+            //                if ($Div.is(":visible")) {
+            //                    $(this).parent().find('.CollapseArea').hide(500);
+            //                } else {
+            //                    $(this).parent().find('.CollapseArea').show(500);
+            //                }
+            //            });
+
+            //            $('.EditBody > h3').each(function () { this.click(); });
+        });
+
+        function collapsable() {
+
+            var headers = $('.EditBody > h3');
+            var contentAreas = $('#CollapseArea').hide();
+            //var expandLink = $('.accordion-expand-all');
+
+            headers.unbind("click");
+            // add the accordion functionality
+            headers.click(function () {
+                var panel = $(this).next();
+                var isOpen = panel.is(':visible');
+                //console.log($(this));
+
+
+                panel[isOpen ? 'slideUp' : 'slideDown']().trigger(isOpen ? 'hide' : 'show');
+
+                // stop the link from causing a pagescroll
+                return false;
+            });
+
+
+            // hook up the expand/collapse all
+            //            expandLink.click(function () {
+            //                var isAllOpen = $(this).data('isAllOpen');
+
+            //                contentAreas[isAllOpen ? 'hide' : 'show']()
+            //        .trigger(isAllOpen ? 'hide' : 'show');
+            //            });
+
+            // when panels open or close, check to see if they're all open
+            contentAreas.on({
+                // whenever we open a panel, check to see if they're all open
+                // if all open, swap the button to collapser
+                show: function () {
+                    //                    var isAllOpen = !contentAreas.is(':hidden');
+                    //                    if (isAllOpen) {
+                    //                        expandLink.text('Collapse All')
+                    //                .data('isAllOpen', true);
+                    //                    }
+                },
+                // whenever we close a panel, check to see if they're all open
+                // if not all open, swap the button to expander
+                hide: function () {
+                    var isAllOpen = !contentAreas.is(':hidden');
+                    //                    if (!isAllOpen) {
+                    //                        //expandLink.text('Expand all').data('isAllOpen', false);
+                    //                    }
+                }
+            });
+
+        }
+
+
+        function sortable() {
+            $("#EditArea")
+            //      .multiOpenAccordion({
+            //          header: "> div > h3",
+            //          heightStyle: "content"
+            //      })
+      .sortable({
+          axis: "y",
+          handle: "h3",
+          stop: function (event, ui) {
+              // IE doesn't register the blur when sorting
+              // so trigger focusout handlers to remove .ui-state-focus
+              ui.item.children("h3").triggerHandler("focusout");
+
+              // Refresh accordion to handle new order
+              //$(this).accordion("refresh");
+          },
+          update: function (event, ui) {
+              $("#EditArea").find('.group').each(function (e) {
+                  //console.log($(this).attr('k'));
+              })
+          }
+      });
+        }
+
+        function SendToServer(input) {
+            var IsMultiple = input.prop("multiple");
+            var data = new FormData();
+
+            if (IsMultiple) {
+                var i = 0;
+                for (i = 0; i < input[0].files.length; i++) {
+                    var file = input[0].files[i];
+                    //console.log(file);        
+                    Upload(file, input);
+                }
+            }
+            else {
+                var file = input[0].files[0];
+                Upload(file, input);
+
+            }
+
+        }
+        function Upload(file, input) {
+            var IsMultiple = input.prop("multiple");
+            //var $progress = $('<progress value="0" max="100">');
+            var data = new FormData();
+            data.append(file.name, file);
+            $sortableImages = "";
+            var $img = UI_Img('http://www.logoless.com.tw/_images//_beta/spinner.gif');
+
+            if (!IsMultiple) {
+                input.parent().parent().find('.ImageList').empty();
+            }
+
+            var $tmpImg = input.parent().parent().find('.ImageList');
+
+            $tmpImg.append($img);
+            //$img.append($progress);
+
+            $.ajax({
+                xhr: function () {
+                    var xhr = new window.XMLHttpRequest();
+                    xhr.upload.id = 1;
+                    xhr.upload.addEventListener("progress", function (evt) {
+
+                        if (evt.lengthComputable) {
+                            var _percentComplete = evt.loaded / evt.total;
+                            //$progress.val(_percentComplete * 100);
+                        }
+                    }, false);
+
+                    xhr.addEventListener("progress", function (evt) {
+
+                        if (evt.lengthComputable) {
+                            //console.log(file.name + "  OK!!");
+                        }
+                    }, false);
+
+                    return xhr;
+                },
+                type: 'POST',
+                url: 'Common/HttpUploadHandler.ashx' + '?file=' + encodeURI(file.name),
+                contentType: false,
+                processData: false,
+                data: data,
+                sync: true,
+                success: function (result) {
+                    console.log(result);
+                    //$progress.remove();
+
+                    $img.find('img').attr("src", result);
+                    input.val('');
+                },
+                error: function (e) {
+                    console.log(e);
+                }
+            });
+        }
+    </script>
+    </form>
+</body>
+</html>

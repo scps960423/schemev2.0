@@ -1,0 +1,445 @@
+body {
+    background-color: $white;
+    font: 12pt arial, 微軟正黑體, sans-serif!important;
+    margin: 0;
+    line-height: 200%;
+    color: #515151;
+    .doc_container {
+        padding: 0;
+        .docs-editor {
+            outline: none;
+            overflow: auto;
+            margin: auto;
+            max-width: 960px;
+            background-color: #F8F5F5;
+            #btnSave {
+                @extend %FinishBtn;
+                float: right;
+            }
+            .schema-editor {
+                background-color: $white;
+                margin: 30px;
+                .form-title {
+                    .title-container {
+                        font-size: 1.1em;
+                        font-weight: bold;
+                    }
+                }
+                .EditBody {
+                    /*border: 1px solid transparent;*/
+                    h3 {
+                        font-size: 1.1em;
+                        padding: 0 30px 20px 30px;
+                        cursor: pointer;
+                        position: relative;
+                        &:hover {
+                            background-color: #fbfbfb;
+                            .Edit {
+                                display: block;
+                            }
+                            .ParagraphTitle,
+                            .Title {
+                                &:after {
+                                    content: url("../images/point2.png");
+                                }
+                            }
+                        }
+                        &:active {
+                            cursor: move;
+                        }
+                        hr {
+                            width: 100%;
+                        }
+                        .SingleImage img {
+                            width: 225px;
+                        }
+                        .ParagraphTitle,
+                        .Title {
+                            &:after {
+                                content: url("../images/point.png");
+                                position: absolute;
+                                right: 15px;
+                                top: 6px;
+                                width: 20px;
+                                cursor: move;
+                            }
+                        }
+                    }
+                }
+                .EditThisPart {
+                    border-left: 2px solid #B812C3;
+                    box-sizing: border-box;
+                }
+                .CollapseArea {
+                    position: relative;
+                    .EditFeatures {
+                        position: absolute;
+                        top: 15px;
+                        right: 15px;
+                        div {
+                            display: inline-block;
+                            float: left;
+                            margin-left: 10px;
+                        }
+                        select {
+                            display: inline-block;
+                            height: 35px;
+                        }
+                        .Ques select {
+                            width: 100px;
+                        }
+                        .Copy {
+                            @extend .icon-pic-icon-02;
+                            width: image-width('icon-pic/icon-02.png');
+                            height: image-height('icon-pic/icon-02.png');
+                            @extend %btn;
+                            &:hover+span {
+                                background-color: $tip-color;
+                                color: $white;
+                                &:after {
+                                    border-color: transparent transparent $tip-color transparent;
+                                }
+                            }
+                        }
+                        .Delete {
+                            @extend .icon-pic-icon-03;
+                            width: image-width('icon-pic/icon-03.png');
+                            height: image-height('icon-pic/icon-03.png');
+                            @extend %btn;
+                            &:hover+span {
+                                background-color: $tip-color;
+                                color: $white;
+                                &:after {
+                                    border-color: transparent transparent $tip-color transparent;
+                                }
+                            }
+                        }
+                        .TooltipContent {
+                            @extend %ToolTip;
+                        }
+                    }
+                    #H-line {
+                        min-height: 150px;
+                        width: 100%;
+                        .hl {
+                            border: 1px solid #08c;
+                        }
+                    }
+                    .Content {
+                        padding: 15px;
+                        width: inherit;
+                        background-color: #f2f2ef;
+                        box-shadow: rgba(0, 0, 0, 0.8) 0px 1px 11px;
+                        font-size: 12.5pt;
+                        &:after {
+                            @extend %clear;
+                        }
+                        .form-inputfield {
+                            width: 500px;
+                            @extend %input;
+                        }
+                        .form-inputsection {
+                            width: 200px;
+                            @extend %input;
+                        }
+                        .section-num {
+                            margin: 10px 5px;
+                            width: 50px;
+                            line-height: 150%;
+                        }
+                        .DeleteBtn {
+                            margin-left: 10px;
+                            cursor: pointer;
+                            color: $gray;
+                            &:hover {
+                                color: $light-gray;
+                            }
+                        }
+                        .finishButton {
+                            @extend %FinishBtn;
+                            float: right;
+                        }
+                        .videoType1Radio,
+                        .videoType2Radio {
+                            margin: 10px 0;
+                            input {
+                                font-size: 12.5pt;
+                            }
+                        }
+                        .TitleRow,
+                        .DescriptionRow,
+                        .ddlTypeRow {
+                            div {
+                                margin: 13px 0;
+                                text-align: right;
+                                &:nth-child(1) {
+                                    min-width: 69px;
+                                    padding-right: 5px;
+                                }
+                            }
+                            .DescriptionLabel {
+                                vertical-align: top;
+                            }
+                            textarea {
+                                width: 80%;
+                                margin: 10px 5px 10px;
+                                font-size: 12.5pt; //margin-left: 5px;
+                            }
+                            span {
+                                select {
+                                    height: 25px;
+                                    font-size: 11pt;
+                                    margin-left: 5px;
+                                    color: #666666;
+                                }
+                                .jumpQ_span,
+                                .Score_span {
+                                    margin-left: 5px;
+                                }
+                            }
+                        }
+                        .optionTextFieldNew {
+                            margin-left: 10px;
+                            margin-top: 5px;
+                            span.addOther {
+                                color: #ffffff;
+                                background-color: #00BBFF;
+                                padding: 8px;
+                                border-radius: 5px;
+                                margin-left: 5px;
+                            }
+                            &>.newOption {
+                                margin-left: 70px !important;
+                                display: inline-block;
+                                @extend %Btn_style01;
+                                margin-right: 5px;
+                                margin-bottom: 5px;
+                            }
+                            div {
+                                .otherOptionText {
+                                    border: 1px solid #84A4B4;
+                                    background: #efefef;
+                                }
+                            }
+                            .checkCount,
+                            div[cid="7"]+div,
+                            .perLineCount {
+                                margin-left: 70px!important;
+                               
+                            }
+                        }
+                        .PresentationfiledSingle {
+                            .PresentationText {
+                                @extend %Presentation;
+                                margin-left: 80px!important;
+                                line-height: 150%;
+                            }
+                        }
+                        .PresentationfiledMultiLine {
+                            .PresentationText {
+                                @extend %Presentation;
+                                margin-left: 80px!important;
+                                line-height: 7em;
+                                width: 80%;
+                            }
+                        }
+                        div[dataid="10"] {
+                            width: 87%;
+                            padding-left: 75px;
+                            &>div {
+                                margin-top: 10px;
+                                Input {
+                                    @extend %frame;
+                                    margin-left: 1px;
+                                }
+                            }
+                            .ImageList {
+                                width: 90%;
+                                &:after {
+                                    @extend %clear;
+                                }
+                                li {
+                                    float: left;
+                                    position: relative;
+                                    width: 33%;
+                                    &:after {
+                                        clear: left;
+                                    }
+                                    &:active,
+                                    &:hover {
+                                        cursor: move;
+                                    }
+                                    div {
+                                        margin: 10px;
+                                        span.DeleteImgBtn {
+                                            position: absolute;
+                                            right: 10px;
+                                            top: 0;
+                                            @extend %DeleteBtn;
+                                        }
+                                        a {
+                                            display: block;
+                                            background-size: contain;
+                                            background-repeat: no-repeat;
+                                            background-position: center;
+                                            height: 145px;
+                                            margin: 10px 0;
+                                            img {
+                                                width: 200px;
+                                                visibility: hidden;
+                                            }
+                                        }
+                                        input {
+                                            width: 96.5%;
+                                            height: 25px;
+                                            font-size: 11pt;
+                                        }
+                                    }
+                                }
+                            }
+                            .MultiImageSetting {
+                                div {
+                                    margin: 10px 0;
+                                    margin-left: 5px;
+                                }
+                            }
+                        }
+                        div[dataid="11"] {
+                            padding-left: 80px;
+                            &>div {
+                                margin-top: 10px;
+                                Input {
+                                    padding-bottom: 10px;
+                                    @extend %frame;
+                                }
+                            }
+                            .ImageList {
+                                width: 252px;
+                                li {
+                                    position: relative;
+                                    span.DeleteImgBtn {
+                                        position: absolute;
+                                        right: -9px;
+                                        @extend %DeleteBtn;
+                                    }
+                                }
+                            }
+                            img {
+                                width: 200px;
+                                height: auto; // padding: 10px 0;
+                            }
+                        }
+                        div[dataid="12"] {
+                            padding-left: 80px;
+                            .youtubeText {
+                                @extend %frame;
+                            }
+                        }
+                        .AddressArea,
+                        .DateArea,
+                        .UploadArea {
+                            height: 25px;
+                            font-size: 12.5pt;
+                        }
+                        .AddressArea {
+                            padding-left: 80px;
+                            .zip {
+                                /*  @extend %frame; */
+                                height: 19px;
+                                font-size: 11pt;
+                                margin-right: 5px;
+                            }
+                            .county,
+                            .district {
+                                height: 25px;
+                                font-size: 11pt;
+                                color: #666666;
+                                vertical-align:bottom;
+                                margin-right: 5px;
+                            }
+                              
+                        }
+                        .DateArea {
+                            padding-left: 80px;
+                            .dateInput {
+                                @extend %frame;
+                                width: 265px;
+                            }
+                        }
+                        .AllowFileTypeArea {
+                            padding-left: 80px;
+                            .AllowFileType {
+                                padding-right: 5px;
+                            }
+                            .AllowFileTypeInput {
+                                margin-left: 5px;
+                               line-height: 19px;
+                               font-size: 11pt;
+                            }
+                        }
+                        .option {
+                            li {
+                                margin-left: 65px;
+                                input {
+                                    width: 200px;
+                                    @extend %input;
+                                }
+                                span img {
+                                    margin-bottom: -5px;
+                                }
+                            }
+                            .jumpQuestionSelect {
+                                width: 145px;
+                                height: 25px;
+                                font-size: 12.5pt;
+                                margin-right: 10px;
+                            }
+                        }
+                        .optionTextFieldNew {
+                            input {
+                                @extend %input;
+                            }
+                            .perLineCount {
+                                input[dataid="7"] {
+                                    width: 50px;
+                                }
+                            }
+                        }
+                        .is-add {
+                            cursor: pointer;
+                            opacity: .5;
+                        }
+                        .img_ques li {
+                            float: left;
+                            margin-right: 15px;
+                            p {
+                                text-align: right;
+                            }
+                        }
+                    }
+                }
+                .Add-Ques select {
+                    width: 280px;
+                    height: 25px;
+                }
+                .bn_box {
+                    text-align: center;
+                    margin: 5px 0;
+                    clear: both;
+                    margin-bottom: 70px;
+                }
+            }
+        }
+    }
+}
+
+.addElement {
+    margin-left: 35px;
+    height: 25px;
+    font-size: 11pt;
+    color: #666666;
+}
+
+#imgTips {
+    margin-left: 20px;
+}

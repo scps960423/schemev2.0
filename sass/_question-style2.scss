@@ -1,0 +1,218 @@
+body {
+    background-color: $white;
+    font: 12pt arial, 微軟正黑體, sans-serif !important;
+    margin: 0;
+    line-height: 175%;
+    h1 {
+        font-size: 1.4em;
+    }
+    label {
+        word-break: break-all;
+    }
+    .EditBody {
+        position: relative;
+        .Question {
+            border: 1px solid transparent;
+            margin-top: 15px !important;
+            &:after {
+                @extend %clear;
+            }
+            .required-message {
+                font-size: .8em;
+                color: #A50E0E;
+                text-indent: 10px;
+            }
+            .Title {
+                font-weight: 600;
+                color: #6380E0;
+                margin: 10px 0;
+                background: url("../images/form_icon.png") left 0px no-repeat;
+                padding-left: 25px;
+            }
+            .SingleRadio,
+            .MultiCheckbox,
+            .Description {
+                margin: 10px;
+                font-size: 0.9em;
+            }
+            .Description {
+                display: block !important;
+            }
+            .ParagraphTitle {
+                color: #7C7C7D;
+                margin-top: 30px;
+                margin-bottom: 15px;
+                font-weight: 600;
+                text-align: center;
+                margin: 30px 0 15px 0;
+            }
+            .ParagraphDescription {
+                padding: 10px;
+                font-size: 0.9em;
+                min-height: 100px;
+                background-color: #F4FAF9;
+                border: 1px solid #D3EBFF;
+            }
+            .TextInput,
+            .MultiLineInput,
+            .DropDown {
+                padding-left: 15px;
+            }
+            .TextInput input,
+            .MultiLineInput textarea {
+                border-radius: 5px;
+                border: 1px solid #ccc;
+                min-width: 95%;
+                height: 100%;
+                color: #515151 !important;
+            }
+            .TextInput input {
+                height: 40px;
+            }
+            .MultiLineInput textarea {
+                height: 120px;
+            }
+            .Title {
+                font-size: 1em;
+            }
+            .SingleImage img {
+                width: 30%;
+            }
+            .SingleRadio,
+            .MultiCheckbox {
+                line-height: 175%;
+                ul {
+                    li {
+                        div {
+                            label {
+                                input {
+                                    float: left;
+                                    margin: 7px 0;
+                                    border-color: #ccc;
+                                }
+                                p {
+                                    overflow: hidden;
+                                    padding-left: 5px;
+                                    margin: 10px 0 0 0;
+                                }
+                            }
+                        }
+                    }
+                }
+                ul {
+                    @for $i from 1 through 10 {
+                        $int: $i;
+                        @if( $int < 10) {
+                            $int: '0#{$int}';
+                        }
+                        &.int#{$int} {
+                            li {
+                                width: 100% / $i;
+                                float: left;
+                                &:nth-child(#{$i}n+1) {
+                                    clear: left;
+                                }
+                            }
+                        }
+                    }
+                    &:after {
+                        content: $content;
+                        display: block;
+                        height: 0;
+                        visibility: hidden;
+                        clear: both;
+                    }
+                }
+            }
+            .ImageSelect {
+                margin: 0 10px;
+                li {
+                    width: 33%;
+                    float: left;
+                    color: #333;
+                    &:nth-child(3n+1) {
+                        clear: left;
+                    }
+                    @include at('phone') {
+                        width: 100%;
+                    }
+
+                    & > div {
+                        position: relative;
+                        padding: 30px 10px;
+                        margin: 10px 20px;
+                        background-color: #F9F9F9;
+                        border-radius: 5px;
+                        border: 1px solid #D3EBFF;
+                        @include at('phone') {
+                            padding: 10px;
+                        }
+                        label {
+                            a {
+                                display: block;
+                                background-size: contain;
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                height: 185px;
+                                img {
+                                    visibility: hidden;
+                                    width: 100%;
+                                }
+                            }
+                            div {
+                                width: 90%;
+                                margin: 0 auto;
+                                input {
+                                    float: left;
+                                    margin: 5px;
+                                    padding-right: 3px;
+                                }
+                                p {
+                                    overflow: hidden;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .Edit {
+            @extend .icon-pic-icon-01;
+            width: image-width('icon-pic/icon-01.png');
+            height: image-height('icon-pic/icon-01.png');
+            @extend %btn;
+            display: none;
+            position: absolute;
+            top: 10px;
+            right: 33px;
+            &:hover + span {
+                background-color: $tip-color;
+                color: $white;
+                &:after {
+                    border-color: transparent transparent $tip-color transparent;
+                }
+            }
+        }
+
+    }
+}
+
+.required~.required-message {
+    display: block;
+}
+
+.required {
+    border-color: rgb(196, 59, 29) !important;
+}
+
+.required-message {
+    display: none;
+    margin-bottom: 20px;
+}
+
+.required-message {
+    color: rgb(196, 59, 29);
+    font-weight: 400;
+    font-size: 1.000rem;
+    font-style: normal;
+}

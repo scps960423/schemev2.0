@@ -1,0 +1,48 @@
+    .ViewForm {
+        max-width: 1010px;
+        margin: 20px auto;
+        background-color: #fff;
+        padding: 30px;
+        -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.01);
+    }
+
+    	@include rwd( 768px, 320px ) {
+    		body {
+    			    .Question {
+			    		.SingleRadio, .MultiCheckbox {
+			    			 ul {
+
+			                    li {
+			                     width: 100%!important;
+         	                    }
+			                  }
+
+			                 }
+			    		}
+			    	    .ImageSelect {
+			    	    	li {
+			    	    	  width: 100%!important;
+			    	    	  float: none!important;
+			    	    	  div {
+			    	    	  	    width: 85%;
+    								margin: 15px auto!important;
+			    	    	  }
+			    	    	}
+			    	    }
+                        .SingleImage {
+                        	padding: 0 20px;
+	                        img {
+							  width: 100%!important;
+							}
+                        }
+                        .video > div , .video > iframe {
+                        	width: 100%!important;
+                        }
+
+			        }
+    	}
+
+        
+
+
