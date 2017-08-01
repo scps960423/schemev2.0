@@ -40,11 +40,11 @@ body .doc_container .docs-editor .schema-editor .CollapseArea .EditFeatures .Cop
 
 /* line 4, ../sass/_function.scss */
 body .doc_container .docs-editor .schema-editor .CollapseArea .Content div[dataid="10"] > div Input, body .doc_container .docs-editor .schema-editor .CollapseArea .Content div[dataid="11"] > div Input, body .doc_container .docs-editor .schema-editor .CollapseArea .Content div[dataid="12"] .youtubeText, body .doc_container .docs-editor .schema-editor .CollapseArea .Content .DateArea .dateInput {
-  line-height: 25px;
-  font-size: 11pt;
+  line-height: 27px;
+  font-size: 12.5pt;
 }
 
-/* line 13, ../sass/_function.scss */
+/* line 14, ../sass/_function.scss */
 body .doc_container .docs-editor .schema-editor .CollapseArea .Content:after, body .doc_container .docs-editor .schema-editor .CollapseArea .Content div[dataid="10"] .ImageList:after {
   content: "​";
   display: block;
@@ -52,16 +52,15 @@ body .doc_container .docs-editor .schema-editor .CollapseArea .Content:after, bo
   clear: both;
 }
 
-/* line 69, ../sass/_function.scss */
+/* line 70, ../sass/_function.scss */
 body .doc_container .docs-editor .schema-editor .CollapseArea .Content .form-inputfield, body .doc_container .docs-editor .schema-editor .CollapseArea .Content .form-inputsection, body .doc_container .docs-editor .schema-editor .CollapseArea .Content .option li input, body .doc_container .docs-editor .schema-editor .CollapseArea .Content .optionTextFieldNew input {
-  line-height: 19px;
+  line-height: 21px;
   margin: 10px 0px;
-  /* padding: 0px;
-  padding: 0 0 5px 0\0; */
   resize: none;
   vertical-align: middle;
   margin-left: 5px;
   font-size: 12.5pt;
+  padding-left: 5px !important;
 }
 
 /* line 89, ../sass/_function.scss */
@@ -91,7 +90,7 @@ body .doc_container .docs-editor .schema-editor .CollapseArea .Content .optionTe
 body .doc_container .docs-editor #btnSave, body .doc_container .docs-editor .schema-editor .CollapseArea .Content .finishButton {
   width: 100px !important;
   height: 35px !important;
-  background: #4798EB;
+  background: #ff8303;
   border-width: 0px;
   color: #ffffff;
   border-radius: 5px;
@@ -108,9 +107,10 @@ body .doc_container .docs-editor .schema-editor .CollapseArea .Content .Presenta
   padding: 2px 3px;
   vertical-align: top;
   font-size: 11pt;
+  margin-left: 10px;
 }
 
-/* line 131, ../sass/_function.scss */
+/* line 132, ../sass/_function.scss */
 body .doc_container .docs-editor .schema-editor .CollapseArea .EditFeatures .TooltipContent {
   position: absolute;
   margin-left: -35px;
@@ -122,7 +122,7 @@ body .doc_container .docs-editor .schema-editor .CollapseArea .EditFeatures .Too
   color: transparent;
   border-radius: 5px;
 }
-/* line 141, ../sass/_function.scss */
+/* line 142, ../sass/_function.scss */
 body .doc_container .docs-editor .schema-editor .CollapseArea .EditFeatures .TooltipContent:after {
   width: 0px;
   height: 0px;
@@ -145,22 +145,22 @@ body .doc_container .docs-editor .schema-editor .CollapseArea .EditFeatures .Too
   background-repeat: no-repeat;
 }
 
-/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-icon-01 {
   background-position: 0 0;
 }
 
-/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-icon-02, body .doc_container .docs-editor .schema-editor .CollapseArea .EditFeatures .Copy {
   background-position: 0 -31px;
 }
 
-/* line 84, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-pic-icon-03, body .doc_container .docs-editor .schema-editor .CollapseArea .EditFeatures .Delete {
   background-position: 0 -61px;
 }
 
-/* line 5, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -182,45 +182,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -445,17 +445,25 @@ body .doc_container .docs-editor .schema-editor .CollapseArea .Content .ddlTypeR
   width: 80%;
   margin: 10px 5px 10px;
   font-size: 12.5pt;
+  padding-left: 5px;
 }
-/* line 189, ../sass/_style.scss */
+/* line 190, ../sass/_style.scss */
+body .doc_container .docs-editor .schema-editor .CollapseArea .Content .TitleRow span .JQSpan,
+body .doc_container .docs-editor .schema-editor .CollapseArea .Content .DescriptionRow span .JQSpan,
+body .doc_container .docs-editor .schema-editor .CollapseArea .Content .ddlTypeRow span .JQSpan {
+  margin-left: 5px;
+}
+/* line 193, ../sass/_style.scss */
 body .doc_container .docs-editor .schema-editor .CollapseArea .Content .TitleRow span select,
 body .doc_container .docs-editor .schema-editor .CollapseArea .Content .DescriptionRow span select,
 body .doc_container .docs-editor .schema-editor .CollapseArea .Content .ddlTypeRow span select {
-  height: 25px;
-  font-size: 11pt;
+  height: 27px;
+  font-size: 12.5pt;
   margin-left: 5px;
   color: #666666;
+  vertical-align: baseline;
 }
-/* line 195, ../sass/_style.scss */
+/* line 200, ../sass/_style.scss */
 body .doc_container .docs-editor .schema-editor .CollapseArea .Content .TitleRow span .jumpQ_span,
 body .doc_container .docs-editor .schema-editor .CollapseArea .Content .TitleRow span .Score_span,
 body .doc_container .docs-editor .schema-editor .CollapseArea .Content .DescriptionRow span .jumpQ_span,
@@ -464,12 +472,12 @@ body .doc_container .docs-editor .schema-editor .CollapseArea .Content .ddlTypeR
 body .doc_container .docs-editor .schema-editor .CollapseArea .Content .ddlTypeRow span .Score_span {
   margin-left: 5px;
 }
-/* line 201, ../sass/_style.scss */
+/* line 206, ../sass/_style.scss */
 body .doc_container .docs-editor .schema-editor .CollapseArea .Content .optionTextFieldNew {
   margin-left: 10px;
   margin-top: 5px;
 }
-/* line 204, ../sass/_style.scss */
+/* line 209, ../sass/_style.scss */
 body .doc_container .docs-editor .schema-editor .CollapseArea .Content .optionTextFieldNew span.addOther {
   color: #ffffff;
   background-color: #00BBFF;
@@ -477,77 +485,77 @@ body .doc_container .docs-editor .schema-editor .CollapseArea .Content .optionTe
   border-radius: 5px;
   margin-left: 5px;
 }
-/* line 211, ../sass/_style.scss */
+/* line 216, ../sass/_style.scss */
 body .doc_container .docs-editor .schema-editor .CollapseArea .Content .optionTextFieldNew > .newOption {
   margin-left: 70px !important;
   display: inline-block;
   margin-right: 5px;
   margin-bottom: 5px;
 }
-/* line 219, ../sass/_style.scss */
+/* line 224, ../sass/_style.scss */
 body .doc_container .docs-editor .schema-editor .CollapseArea .Content .optionTextFieldNew div .otherOptionText {
   border: 1px solid #84A4B4;
   background: #efefef;
 }
-/* line 224, ../sass/_style.scss */
+/* line 229, ../sass/_style.scss */
 body .doc_container .docs-editor .schema-editor .CollapseArea .Content .optionTextFieldNew .checkCount,
 body .doc_container .docs-editor .schema-editor .CollapseArea .Content .optionTextFieldNew div[cid="7"] + div,
 body .doc_container .docs-editor .schema-editor .CollapseArea .Content .optionTextFieldNew .perLineCount {
   margin-left: 70px !important;
 }
-/* line 232, ../sass/_style.scss */
+/* line 236, ../sass/_style.scss */
 body .doc_container .docs-editor .schema-editor .CollapseArea .Content .PresentationfiledSingle .PresentationText {
   margin-left: 80px !important;
   line-height: 150%;
 }
-/* line 239, ../sass/_style.scss */
+/* line 244, ../sass/_style.scss */
 body .doc_container .docs-editor .schema-editor .CollapseArea .Content .PresentationfiledMultiLine .PresentationText {
   margin-left: 80px !important;
   line-height: 7em;
-  width: 80%;
+  width: 79%;
 }
-/* line 246, ../sass/_style.scss */
+/* line 251, ../sass/_style.scss */
 body .doc_container .docs-editor .schema-editor .CollapseArea .Content div[dataid="10"] {
   width: 87%;
   padding-left: 75px;
 }
-/* line 249, ../sass/_style.scss */
+/* line 254, ../sass/_style.scss */
 body .doc_container .docs-editor .schema-editor .CollapseArea .Content div[dataid="10"] > div {
   margin-top: 10px;
 }
-/* line 251, ../sass/_style.scss */
+/* line 256, ../sass/_style.scss */
 body .doc_container .docs-editor .schema-editor .CollapseArea .Content div[dataid="10"] > div Input {
   margin-left: 1px;
 }
-/* line 256, ../sass/_style.scss */
+/* line 261, ../sass/_style.scss */
 body .doc_container .docs-editor .schema-editor .CollapseArea .Content div[dataid="10"] .ImageList {
   width: 90%;
 }
-/* line 261, ../sass/_style.scss */
+/* line 266, ../sass/_style.scss */
 body .doc_container .docs-editor .schema-editor .CollapseArea .Content div[dataid="10"] .ImageList li {
   float: left;
   position: relative;
   width: 33%;
 }
-/* line 265, ../sass/_style.scss */
+/* line 270, ../sass/_style.scss */
 body .doc_container .docs-editor .schema-editor .CollapseArea .Content div[dataid="10"] .ImageList li:after {
   clear: left;
 }
-/* line 268, ../sass/_style.scss */
+/* line 273, ../sass/_style.scss */
 body .doc_container .docs-editor .schema-editor .CollapseArea .Content div[dataid="10"] .ImageList li:active, body .doc_container .docs-editor .schema-editor .CollapseArea .Content div[dataid="10"] .ImageList li:hover {
   cursor: move;
 }
-/* line 272, ../sass/_style.scss */
+/* line 277, ../sass/_style.scss */
 body .doc_container .docs-editor .schema-editor .CollapseArea .Content div[dataid="10"] .ImageList li div {
   margin: 10px;
 }
-/* line 274, ../sass/_style.scss */
+/* line 279, ../sass/_style.scss */
 body .doc_container .docs-editor .schema-editor .CollapseArea .Content div[dataid="10"] .ImageList li div span.DeleteImgBtn {
   position: absolute;
   right: 10px;
   top: 0;
 }
-/* line 280, ../sass/_style.scss */
+/* line 285, ../sass/_style.scss */
 body .doc_container .docs-editor .schema-editor .CollapseArea .Content div[dataid="10"] .ImageList li div a {
   display: block;
   background-size: contain;
@@ -556,148 +564,161 @@ body .doc_container .docs-editor .schema-editor .CollapseArea .Content div[datai
   height: 145px;
   margin: 10px 0;
 }
-/* line 287, ../sass/_style.scss */
+/* line 292, ../sass/_style.scss */
 body .doc_container .docs-editor .schema-editor .CollapseArea .Content div[dataid="10"] .ImageList li div a img {
   width: 200px;
   visibility: hidden;
 }
-/* line 292, ../sass/_style.scss */
+/* line 297, ../sass/_style.scss */
 body .doc_container .docs-editor .schema-editor .CollapseArea .Content div[dataid="10"] .ImageList li div input {
   width: 96.5%;
   height: 25px;
   font-size: 11pt;
 }
-/* line 301, ../sass/_style.scss */
+/* line 306, ../sass/_style.scss */
 body .doc_container .docs-editor .schema-editor .CollapseArea .Content div[dataid="10"] .MultiImageSetting div {
   margin: 10px 0;
   margin-left: 5px;
 }
-/* line 307, ../sass/_style.scss */
+/* line 312, ../sass/_style.scss */
 body .doc_container .docs-editor .schema-editor .CollapseArea .Content div[dataid="11"] {
   padding-left: 80px;
 }
-/* line 309, ../sass/_style.scss */
+/* line 314, ../sass/_style.scss */
 body .doc_container .docs-editor .schema-editor .CollapseArea .Content div[dataid="11"] > div {
   margin-top: 10px;
 }
-/* line 311, ../sass/_style.scss */
+/* line 316, ../sass/_style.scss */
 body .doc_container .docs-editor .schema-editor .CollapseArea .Content div[dataid="11"] > div Input {
   padding-bottom: 10px;
 }
-/* line 316, ../sass/_style.scss */
+/* line 321, ../sass/_style.scss */
 body .doc_container .docs-editor .schema-editor .CollapseArea .Content div[dataid="11"] .ImageList {
   width: 252px;
 }
-/* line 318, ../sass/_style.scss */
+/* line 323, ../sass/_style.scss */
 body .doc_container .docs-editor .schema-editor .CollapseArea .Content div[dataid="11"] .ImageList li {
   position: relative;
 }
-/* line 320, ../sass/_style.scss */
+/* line 325, ../sass/_style.scss */
 body .doc_container .docs-editor .schema-editor .CollapseArea .Content div[dataid="11"] .ImageList li span.DeleteImgBtn {
   position: absolute;
   right: -9px;
 }
-/* line 327, ../sass/_style.scss */
+/* line 332, ../sass/_style.scss */
 body .doc_container .docs-editor .schema-editor .CollapseArea .Content div[dataid="11"] img {
   width: 200px;
   height: auto;
 }
-/* line 332, ../sass/_style.scss */
+/* line 337, ../sass/_style.scss */
 body .doc_container .docs-editor .schema-editor .CollapseArea .Content div[dataid="12"] {
   padding-left: 80px;
 }
-/* line 338, ../sass/_style.scss */
+/* line 339, ../sass/_style.scss */
+body .doc_container .docs-editor .schema-editor .CollapseArea .Content div[dataid="12"] .youtubeText {
+  padding-left: 5px;
+}
+/* line 344, ../sass/_style.scss */
 body .doc_container .docs-editor .schema-editor .CollapseArea .Content .AddressArea,
 body .doc_container .docs-editor .schema-editor .CollapseArea .Content .DateArea,
 body .doc_container .docs-editor .schema-editor .CollapseArea .Content .UploadArea {
   height: 25px;
   font-size: 12.5pt;
 }
-/* line 344, ../sass/_style.scss */
+/* line 350, ../sass/_style.scss */
 body .doc_container .docs-editor .schema-editor .CollapseArea .Content .AddressArea {
   padding-left: 80px;
 }
-/* line 346, ../sass/_style.scss */
+/* line 352, ../sass/_style.scss */
 body .doc_container .docs-editor .schema-editor .CollapseArea .Content .AddressArea .zip {
   /*  @extend %frame; */
-  height: 19px;
-  font-size: 11pt;
+  height: 23px;
+  font-size: 12.5pt;
   margin-right: 5px;
+  padding: 0 5px 0 5px;
 }
-/* line 352, ../sass/_style.scss */
+/* line 359, ../sass/_style.scss */
 body .doc_container .docs-editor .schema-editor .CollapseArea .Content .AddressArea .county,
 body .doc_container .docs-editor .schema-editor .CollapseArea .Content .AddressArea .district {
-  height: 25px;
-  font-size: 11pt;
+  height: 27px;
+  font-size: 12.5pt;
   color: #666666;
-  vertical-align: bottom;
+  vertical-align: middle;
   margin-right: 5px;
 }
-/* line 362, ../sass/_style.scss */
+/* line 368, ../sass/_style.scss */
 body .doc_container .docs-editor .schema-editor .CollapseArea .Content .DateArea {
   padding-left: 80px;
 }
-/* line 364, ../sass/_style.scss */
+/* line 370, ../sass/_style.scss */
 body .doc_container .docs-editor .schema-editor .CollapseArea .Content .DateArea .dateInput {
   width: 265px;
 }
-/* line 369, ../sass/_style.scss */
+/* line 375, ../sass/_style.scss */
 body .doc_container .docs-editor .schema-editor .CollapseArea .Content .AllowFileTypeArea {
   padding-left: 80px;
 }
-/* line 371, ../sass/_style.scss */
+/* line 377, ../sass/_style.scss */
 body .doc_container .docs-editor .schema-editor .CollapseArea .Content .AllowFileTypeArea .AllowFileType {
   padding-right: 5px;
 }
-/* line 374, ../sass/_style.scss */
+/* line 380, ../sass/_style.scss */
 body .doc_container .docs-editor .schema-editor .CollapseArea .Content .AllowFileTypeArea .AllowFileTypeInput {
   margin-left: 5px;
-  line-height: 19px;
-  font-size: 11pt;
+  line-height: 21px;
+  font-size: 12.5pt;
 }
-/* line 381, ../sass/_style.scss */
+/* line 387, ../sass/_style.scss */
 body .doc_container .docs-editor .schema-editor .CollapseArea .Content .option li {
   margin-left: 65px;
 }
-/* line 383, ../sass/_style.scss */
+/* line 389, ../sass/_style.scss */
 body .doc_container .docs-editor .schema-editor .CollapseArea .Content .option li input {
   width: 200px;
 }
-/* line 387, ../sass/_style.scss */
+/* line 390, ../sass/_style.scss */
+body .doc_container .docs-editor .schema-editor .CollapseArea .Content .option li input .txtScore {
+  width: 50px !important;
+}
+/* line 396, ../sass/_style.scss */
 body .doc_container .docs-editor .schema-editor .CollapseArea .Content .option li span img {
   margin-bottom: -5px;
 }
-/* line 391, ../sass/_style.scss */
+/* line 400, ../sass/_style.scss */
 body .doc_container .docs-editor .schema-editor .CollapseArea .Content .option .jumpQuestionSelect {
   width: 145px;
   height: 25px;
   font-size: 12.5pt;
   margin-right: 10px;
 }
-/* line 403, ../sass/_style.scss */
+/* line 408, ../sass/_style.scss */
+body .doc_container .docs-editor .schema-editor .CollapseArea .Content .optionTextFieldNew input {
+  margin-right: 5px;
+}
+/* line 413, ../sass/_style.scss */
 body .doc_container .docs-editor .schema-editor .CollapseArea .Content .optionTextFieldNew .perLineCount input[dataid="7"] {
   width: 50px;
 }
-/* line 408, ../sass/_style.scss */
+/* line 418, ../sass/_style.scss */
 body .doc_container .docs-editor .schema-editor .CollapseArea .Content .is-add {
   cursor: pointer;
   opacity: .5;
 }
-/* line 412, ../sass/_style.scss */
+/* line 422, ../sass/_style.scss */
 body .doc_container .docs-editor .schema-editor .CollapseArea .Content .img_ques li {
   float: left;
   margin-right: 15px;
 }
-/* line 415, ../sass/_style.scss */
+/* line 425, ../sass/_style.scss */
 body .doc_container .docs-editor .schema-editor .CollapseArea .Content .img_ques li p {
   text-align: right;
 }
-/* line 421, ../sass/_style.scss */
+/* line 431, ../sass/_style.scss */
 body .doc_container .docs-editor .schema-editor .Add-Ques select {
   width: 280px;
   height: 25px;
 }
-/* line 425, ../sass/_style.scss */
+/* line 435, ../sass/_style.scss */
 body .doc_container .docs-editor .schema-editor .bn_box {
   text-align: center;
   margin: 5px 0;
@@ -705,15 +726,20 @@ body .doc_container .docs-editor .schema-editor .bn_box {
   margin-bottom: 70px;
 }
 
-/* line 436, ../sass/_style.scss */
+/* line 446, ../sass/_style.scss */
 .addElement {
   margin-left: 35px;
-  height: 25px;
-  font-size: 11pt;
+  height: 27px;
+  font-size: 12.5pt;
   color: #666666;
 }
 
-/* line 443, ../sass/_style.scss */
+/* line 453, ../sass/_style.scss */
 #imgTips {
   margin-left: 20px;
+}
+
+/* line 457, ../sass/_style.scss */
+input.txtScore {
+  width: 50px !important;
 }

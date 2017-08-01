@@ -31,22 +31,22 @@ body {
             // font-weight: 600;
             margin: 10px 0;
             background: url("../images/form_icon.png") left 0px no-repeat;
-            text-indent: -$interval-ll;
-            margin-left: $interval-ll;
-            color: $main-color;
-          /*   
+            margin-left: $interval-ll; 
             color: $main-color !important;
-            border-bottom: 1px dotted $main-color !important;   */
+            border-bottom: 1px dotted $main-color !important; 
+            
+            .TitleNumber {
+                margin-left: -$interval-ll;
+            }
         }
         .video {
             margin-left: $interval-ll;
         }
-            
         .AddressArea,
         .DateArea,
         .UploadArea {
             margin-left: $interval-ll;
-        } 
+        }
     }
     .SingleRadio,
     .MultiCheckbox,
@@ -59,9 +59,9 @@ body {
         display: block !important;
         color: $deep;
         margin-top: -7px;
-        margin-left:-0px;
-        color: $deep !important;
-        border-top: 1px dotted $deep !important;
+        //margin-left: -0px;
+        /* color: $deep !important;
+        border-top: 1px dotted $deep !important; */
     }
     .ParagraphTitle {
         color: $main-color;
@@ -99,7 +99,7 @@ body {
         height: 120px;
     }
     .Title {
-        font-size:$font-size-l;
+        font-size: $font-size-l;
     }
     .SingleImage img {
         width: 30%;

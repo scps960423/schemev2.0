@@ -184,13 +184,18 @@ body {
                                 width: 80%;
                                 margin: 10px 5px 10px;
                                 font-size: 12.5pt; //margin-left: 5px;
+                                padding-left: 5px;
                             }
                             span {
+                                .JQSpan {
+                                    margin-left: 5px;
+                                }
                                 select {
-                                    height: 25px;
-                                    font-size: 11pt;
+                                    height: 27px;
+                                    font-size: 12.5pt;
                                     margin-left: 5px;
                                     color: #666666;
+                                    vertical-align: baseline;
                                 }
                                 .jumpQ_span,
                                 .Score_span {
@@ -225,7 +230,6 @@ body {
                             div[cid="7"]+div,
                             .perLineCount {
                                 margin-left: 70px!important;
-                               
                             }
                         }
                         .PresentationfiledSingle {
@@ -233,6 +237,7 @@ body {
                                 @extend %Presentation;
                                 margin-left: 80px!important;
                                 line-height: 150%;
+                            
                             }
                         }
                         .PresentationfiledMultiLine {
@@ -240,7 +245,7 @@ body {
                                 @extend %Presentation;
                                 margin-left: 80px!important;
                                 line-height: 7em;
-                                width: 80%;
+                                width: 79%;
                             }
                         }
                         div[dataid="10"] {
@@ -333,6 +338,7 @@ body {
                             padding-left: 80px;
                             .youtubeText {
                                 @extend %frame;
+                                padding-left: 5px;
                             }
                         }
                         .AddressArea,
@@ -345,19 +351,19 @@ body {
                             padding-left: 80px;
                             .zip {
                                 /*  @extend %frame; */
-                                height: 19px;
-                                font-size: 11pt;
+                                height: 23px;
+                                font-size: 12.5pt;
                                 margin-right: 5px;
+                                padding: 0 5px 0 5px;
                             }
                             .county,
                             .district {
-                                height: 25px;
-                                font-size: 11pt;
+                                height: 27px;
+                                font-size: 12.5pt;
                                 color: #666666;
-                                vertical-align:bottom;
+                                vertical-align: middle;
                                 margin-right: 5px;
                             }
-                              
                         }
                         .DateArea {
                             padding-left: 80px;
@@ -373,14 +379,17 @@ body {
                             }
                             .AllowFileTypeInput {
                                 margin-left: 5px;
-                               line-height: 19px;
-                               font-size: 11pt;
+                                line-height: 21px;
+                                font-size: 12.5pt;
                             }
                         }
                         .option {
                             li {
                                 margin-left: 65px;
                                 input {
+                                    .txtScore {
+                                        width: 50px !important;
+                                    }
                                     width: 200px;
                                     @extend %input;
                                 }
@@ -398,6 +407,7 @@ body {
                         .optionTextFieldNew {
                             input {
                                 @extend %input;
+                                margin-right: 5px;
                             }
                             .perLineCount {
                                 input[dataid="7"] {
@@ -435,11 +445,15 @@ body {
 
 .addElement {
     margin-left: 35px;
-    height: 25px;
-    font-size: 11pt;
+    height: 27px;
+    font-size: 12.5pt;
     color: #666666;
 }
 
 #imgTips {
     margin-left: 20px;
+}
+
+input.txtScore {
+    width: 50px !important;
 }
