@@ -31,10 +31,10 @@ body {
             // font-weight: 600;
             margin: 10px 0;
             background: url("../images/form_icon.png") left 0px no-repeat;
-            margin-left: $interval-ll; 
+            margin-left: $interval-ll;
             color: $main-color !important;
-            border-bottom: 1px dotted $main-color !important; 
-            
+            border-bottom: 1px dotted $main-color !important;
+            width: 95%;
             .TitleNumber {
                 margin-left: -$interval-ll;
             }
@@ -46,6 +46,10 @@ body {
         .DateArea,
         .UploadArea {
             margin-left: $interval-ll;
+            .upload {
+                font-size: 15px;
+                margin-right: 5px;
+            }
         }
     }
     .SingleRadio,
@@ -58,8 +62,7 @@ body {
     .Description {
         display: block !important;
         color: $deep;
-        margin-top: -7px;
-        //margin-left: -0px;
+        margin-top: -7px; //margin-left: -0px;
         /* color: $deep !important;
         border-top: 1px dotted $deep !important; */
     }
@@ -240,4 +243,8 @@ body {
     font-weight: 400;
     font-size: 1.000rem;
     font-style: normal;
+}
+select {
+    font-size: 15px;
+    height: 30px;
 }
