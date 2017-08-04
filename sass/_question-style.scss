@@ -33,6 +33,7 @@ body {
             background: url("../images/form_icon.png") left 0px no-repeat;
             font-size: 12.5pt;
             color: $main-color;
+            width: 94%;
         }
         .video {
             margin-left: 15px;
@@ -99,15 +100,14 @@ body {
     .ParagraphTitle {
         color: $main-color;
         margin-top: 30px;
-        margin-bottom: 15px;
-        font-weight: 600;
+        margin-bottom: 15px; //font-weight: 600;
         text-align: center;
         margin: 30px 0 15px 0;
-        font-size: 1.5em;
+        font-size: 12.5pt;
     }
     .ParagraphDescription {
         padding: 10px;
-        font-size: 1.1em;
+        font-size: 11pt;
         min-height: 100px;
         background-color: #F4FAF9;
         border: 1px solid #D3EBFF;
