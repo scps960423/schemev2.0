@@ -151,8 +151,11 @@ body {
                             margin-left: 10px;
                             cursor: pointer;
                             color: $gray;
+                            font-size: 18.5pt;
+                            font-weight: bold;
+                            vertical-align: middle;
                             &:hover {
-                                color: $light-gray;
+                                color: #CC0000;
                             }
                         }
                         .finishButton {
@@ -237,7 +240,6 @@ body {
                                 @extend %Presentation;
                                 margin-left: 80px!important;
                                 line-height: 150%;
-                            
                             }
                         }
                         .PresentationfiledMultiLine {
@@ -246,6 +248,8 @@ body {
                                 margin-left: 80px!important;
                                 line-height: 7em;
                                 width: 79%;
+                                font-size: 12.5pt;
+                                padding-left: 10px;
                             }
                         }
                         div[dataid="10"] {
@@ -395,6 +399,9 @@ body {
                                 }
                                 span img {
                                     margin-bottom: -5px;
+                                }
+                                .scoreSpan {
+                                    margin-right: 10px;
                                 }
                             }
                             .jumpQuestionSelect {
