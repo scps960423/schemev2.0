@@ -99,31 +99,41 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.01);
 }
 
+/* line 10, ../sass/_form-style.scss */
+.event_intro {
+  font-size: 1.4em;
+  /*  text-align: center; */
+  margin-bottom: -15px;
+  margin-top: 35px;
+}
+
 @media (max-width: 768px) and (min-width: 321px) {
-  /* line 16, ../sass/_form-style.scss */
-  body .Question .SingleRadio ul li, body .Question .MultiCheckbox ul li {
+  /* line 23, ../sass/_form-style.scss */
+  body .Question .SingleRadio ul li,
+  body .Question .MultiCheckbox ul li {
     width: 100% !important;
   }
-  /* line 24, ../sass/_form-style.scss */
+  /* line 30, ../sass/_form-style.scss */
   body .ImageSelect li {
     width: 100% !important;
     float: none !important;
   }
-  /* line 27, ../sass/_form-style.scss */
+  /* line 33, ../sass/_form-style.scss */
   body .ImageSelect li div {
     width: 85%;
     margin: 15px auto !important;
   }
-  /* line 33, ../sass/_form-style.scss */
+  /* line 39, ../sass/_form-style.scss */
   body .SingleImage {
     padding: 0 20px;
   }
-  /* line 35, ../sass/_form-style.scss */
+  /* line 41, ../sass/_form-style.scss */
   body .SingleImage img {
     width: 100% !important;
   }
-  /* line 39, ../sass/_form-style.scss */
-  body .video > div, body .video > iframe {
+  /* line 45, ../sass/_form-style.scss */
+  body .video > div,
+  body .video > iframe {
     width: 100% !important;
   }
 }
