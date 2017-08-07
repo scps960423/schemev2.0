@@ -38,12 +38,6 @@ body .Question:after {
   color: #a1a1a1;
 }
 
-/* line 9, ../sass/_function.scss */
-body .Question .UploadArea, body .Question .UploadArea Input, body .Question .AddressArea .address {
-  height: 19px;
-  font-size: 12.5pt;
-}
-
 /* line 14, ../sass/_function.scss */
 body .Question:after {
   content: "​";
@@ -142,7 +136,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 1, ../sass/_question-style.scss */
+/* line 1, ../sass/_question-style3.scss */
 body {
   background-color: #ffffff;
   font: 12pt arial, 微軟正黑體, sans-serif !important;
@@ -150,133 +144,104 @@ body {
   line-height: 175%;
   position: relative;
 }
-/* line 6, ../sass/_question-style.scss */
+/* line 6, ../sass/_question-style3.scss */
 body h1 {
   font-size: 1.4em;
 }
-/* line 9, ../sass/_question-style.scss */
+/* line 9, ../sass/_question-style3.scss */
 body label {
   word-break: break-all;
 }
-/* line 13, ../sass/_question-style.scss */
+/* line 13, ../sass/_question-style3.scss */
 body #ContentPlaceHolder1_divContent {
   margin-bottom: 1em;
 }
-/* line 16, ../sass/_question-style.scss */
+/* line 16, ../sass/_question-style3.scss */
 body #ui-datepicker-div {
   opacity: 0;
 }
-/* line 19, ../sass/_question-style.scss */
+/* line 19, ../sass/_question-style3.scss */
 body .Question {
   border: 1px solid transparent;
   margin-top: 15px !important;
 }
-/* line 25, ../sass/_question-style.scss */
+/* line 25, ../sass/_question-style3.scss */
 body .Question .required-message {
   font-size: .8em;
   color: #A50E0E;
   text-indent: 10px;
 }
-/* line 30, ../sass/_question-style.scss */
+/* line 30, ../sass/_question-style3.scss */
 body .Question .Title {
   margin: 10px 0;
   background: url("../images/form_icon.png") left 0px no-repeat;
-  font-size: 12.5pt;
-  color: #5583db;
-  width: 94%;
+  margin-left: 1em;
+  color: #5583db !important;
+  border-bottom: 1px dotted #5583db !important;
+  width: 95%;
 }
-/* line 38, ../sass/_question-style.scss */
+/* line 38, ../sass/_question-style3.scss */
+body .Question .Title .TitleNumber {
+  margin-left: -1em;
+}
+/* line 42, ../sass/_question-style3.scss */
 body .Question .video {
-  margin-left: 15px;
+  margin-left: 1em;
 }
-/* line 41, ../sass/_question-style.scss */
+/* line 45, ../sass/_question-style3.scss */
 body .Question .AddressArea,
 body .Question .DateArea,
 body .Question .UploadArea {
-  margin-left: 15px;
+  margin-left: 1em;
 }
-/* line 48, ../sass/_question-style.scss */
-body .Question .UploadArea Input {
+/* line 49, ../sass/_question-style3.scss */
+body .Question .AddressArea .upload,
+body .Question .DateArea .upload,
+body .Question .UploadArea .upload {
+  font-size: 15px;
   margin-right: 5px;
 }
-/* line 52, ../sass/_question-style.scss */
-body .Question .UploadArea span {
-  margin-left: 3px;
-}
-/* line 58, ../sass/_question-style.scss */
-body .Question .AddressArea .zip {
-  /* @extend %frame; */
-  height: 19px;
-  font-size: 11px;
-  margin-right: 5px;
-}
-/* line 64, ../sass/_question-style.scss */
-body .Question .AddressArea .county,
-body .Question .AddressArea .district {
-  line-height: 25px;
-  font-size: 12.5pt;
-  color: #666666;
-  vertical-align: middle;
-  margin-right: 4px;
-}
-/* line 72, ../sass/_question-style.scss */
-body .Question .AddressArea .address {
-  color: #666666;
-}
-/* line 78, ../sass/_question-style.scss */
-body .Question .DateArea .dateInput {
-  height: 19px;
-  font-size: 11pt;
-  margin-right: 5px;
-}
-/* line 84, ../sass/_question-style.scss */
-body .Question .ImageSelect {
-  margin-left: -7px;
-}
-/* line 88, ../sass/_question-style.scss */
+/* line 55, ../sass/_question-style3.scss */
 body .SingleRadio,
 body .MultiCheckbox,
 body .Description {
   margin: 10px;
-  margin-left: 13px;
-  font-size: 12.5pt;
+  margin-left: 1em;
+  font-size: 1.1em;
 }
-/* line 95, ../sass/_question-style.scss */
+/* line 62, ../sass/_question-style3.scss */
 body .Description {
   display: block !important;
   color: #545454;
   margin-top: -7px;
-  width: 94%;
+  /* color: $deep !important;
+  border-top: 1px dotted $deep !important; */
 }
-/* line 100, ../sass/_question-style.scss */
+/* line 69, ../sass/_question-style3.scss */
 body .ParagraphTitle {
   color: #5583db;
   margin-top: 30px;
   margin-bottom: 15px;
+  font-weight: 600;
   text-align: center;
   margin: 30px 0 15px 0;
-  font-size: 12.5pt;
+  font-size: 1.5em;
 }
-/* line 108, ../sass/_question-style.scss */
+/* line 78, ../sass/_question-style3.scss */
 body .ParagraphDescription {
   padding: 10px;
-  font-size: 11pt;
+  font-size: 1.1em;
   min-height: 100px;
   background-color: #F4FAF9;
   border: 1px solid #D3EBFF;
 }
-/* line 115, ../sass/_question-style.scss */
+/* line 85, ../sass/_question-style3.scss */
 body .TextInput,
 body .MultiLineInput,
 body .DropDown {
-  margin-left: 15px;
+  padding-left: 1em;
 }
-/* line 120, ../sass/_question-style.scss */
-body .DropDown .jumpSelect {
-  height: 27px;
-  font-size: 12.5pt;
-}
-/* line 124, ../sass/_question-style.scss */
+/* line 90, ../sass/_question-style3.scss */
 body .TextInput input,
 body .MultiLineInput textarea {
   border-radius: 5px;
@@ -285,150 +250,153 @@ body .MultiLineInput textarea {
   height: 100%;
   color: #515151 !important;
 }
-/* line 132, ../sass/_question-style.scss */
+/* line 98, ../sass/_question-style3.scss */
 body .TextInput input {
   height: 40px;
 }
-/* line 135, ../sass/_question-style.scss */
+/* line 101, ../sass/_question-style3.scss */
 body .MultiLineInput textarea {
   height: 120px;
 }
-/* line 141, ../sass/_question-style.scss */
+/* line 104, ../sass/_question-style3.scss */
+body .Title {
+  font-size: 1.1em;
+}
+/* line 107, ../sass/_question-style3.scss */
 body .SingleImage img {
   width: 30%;
-  margin-left: 15px;
+  margin-left: 1em;
 }
-/* line 145, ../sass/_question-style.scss */
+/* line 111, ../sass/_question-style3.scss */
 body .SingleRadio,
 body .MultiCheckbox {
   line-height: 175%;
 }
-/* line 152, ../sass/_question-style.scss */
+/* line 118, ../sass/_question-style3.scss */
 body .SingleRadio ul li div label input,
 body .MultiCheckbox ul li div label input {
   float: left;
-  margin: 9px 0;
+  margin: 7px 0;
   border-color: #ccc;
-  margin-right: 5px;
 }
-/* line 158, ../sass/_question-style.scss */
+/* line 123, ../sass/_question-style3.scss */
 body .SingleRadio ul li div label p,
 body .MultiCheckbox ul li div label p {
   overflow: hidden;
-  /* padding-left: 5px; */
+  padding-left: 5px;
   margin: 10px 0 0 0;
 }
-/* line 174, ../sass/_question-style.scss */
+/* line 139, ../sass/_question-style3.scss */
 body .SingleRadio ul.int01 li,
 body .MultiCheckbox ul.int01 li {
   width: 100%;
   float: left;
 }
-/* line 177, ../sass/_question-style.scss */
+/* line 142, ../sass/_question-style3.scss */
 body .SingleRadio ul.int01 li:nth-child(1n+1),
 body .MultiCheckbox ul.int01 li:nth-child(1n+1) {
   clear: left;
 }
-/* line 174, ../sass/_question-style.scss */
+/* line 139, ../sass/_question-style3.scss */
 body .SingleRadio ul.int02 li,
 body .MultiCheckbox ul.int02 li {
   width: 50%;
   float: left;
 }
-/* line 177, ../sass/_question-style.scss */
+/* line 142, ../sass/_question-style3.scss */
 body .SingleRadio ul.int02 li:nth-child(2n+1),
 body .MultiCheckbox ul.int02 li:nth-child(2n+1) {
   clear: left;
 }
-/* line 174, ../sass/_question-style.scss */
+/* line 139, ../sass/_question-style3.scss */
 body .SingleRadio ul.int03 li,
 body .MultiCheckbox ul.int03 li {
   width: 33.3333333333%;
   float: left;
 }
-/* line 177, ../sass/_question-style.scss */
+/* line 142, ../sass/_question-style3.scss */
 body .SingleRadio ul.int03 li:nth-child(3n+1),
 body .MultiCheckbox ul.int03 li:nth-child(3n+1) {
   clear: left;
 }
-/* line 174, ../sass/_question-style.scss */
+/* line 139, ../sass/_question-style3.scss */
 body .SingleRadio ul.int04 li,
 body .MultiCheckbox ul.int04 li {
   width: 25%;
   float: left;
 }
-/* line 177, ../sass/_question-style.scss */
+/* line 142, ../sass/_question-style3.scss */
 body .SingleRadio ul.int04 li:nth-child(4n+1),
 body .MultiCheckbox ul.int04 li:nth-child(4n+1) {
   clear: left;
 }
-/* line 174, ../sass/_question-style.scss */
+/* line 139, ../sass/_question-style3.scss */
 body .SingleRadio ul.int05 li,
 body .MultiCheckbox ul.int05 li {
   width: 20%;
   float: left;
 }
-/* line 177, ../sass/_question-style.scss */
+/* line 142, ../sass/_question-style3.scss */
 body .SingleRadio ul.int05 li:nth-child(5n+1),
 body .MultiCheckbox ul.int05 li:nth-child(5n+1) {
   clear: left;
 }
-/* line 174, ../sass/_question-style.scss */
+/* line 139, ../sass/_question-style3.scss */
 body .SingleRadio ul.int06 li,
 body .MultiCheckbox ul.int06 li {
   width: 16.6666666667%;
   float: left;
 }
-/* line 177, ../sass/_question-style.scss */
+/* line 142, ../sass/_question-style3.scss */
 body .SingleRadio ul.int06 li:nth-child(6n+1),
 body .MultiCheckbox ul.int06 li:nth-child(6n+1) {
   clear: left;
 }
-/* line 174, ../sass/_question-style.scss */
+/* line 139, ../sass/_question-style3.scss */
 body .SingleRadio ul.int07 li,
 body .MultiCheckbox ul.int07 li {
   width: 14.2857142857%;
   float: left;
 }
-/* line 177, ../sass/_question-style.scss */
+/* line 142, ../sass/_question-style3.scss */
 body .SingleRadio ul.int07 li:nth-child(7n+1),
 body .MultiCheckbox ul.int07 li:nth-child(7n+1) {
   clear: left;
 }
-/* line 174, ../sass/_question-style.scss */
+/* line 139, ../sass/_question-style3.scss */
 body .SingleRadio ul.int08 li,
 body .MultiCheckbox ul.int08 li {
   width: 12.5%;
   float: left;
 }
-/* line 177, ../sass/_question-style.scss */
+/* line 142, ../sass/_question-style3.scss */
 body .SingleRadio ul.int08 li:nth-child(8n+1),
 body .MultiCheckbox ul.int08 li:nth-child(8n+1) {
   clear: left;
 }
-/* line 174, ../sass/_question-style.scss */
+/* line 139, ../sass/_question-style3.scss */
 body .SingleRadio ul.int09 li,
 body .MultiCheckbox ul.int09 li {
   width: 11.1111111111%;
   float: left;
 }
-/* line 177, ../sass/_question-style.scss */
+/* line 142, ../sass/_question-style3.scss */
 body .SingleRadio ul.int09 li:nth-child(9n+1),
 body .MultiCheckbox ul.int09 li:nth-child(9n+1) {
   clear: left;
 }
-/* line 174, ../sass/_question-style.scss */
+/* line 139, ../sass/_question-style3.scss */
 body .SingleRadio ul.int10 li,
 body .MultiCheckbox ul.int10 li {
   width: 10%;
   float: left;
 }
-/* line 177, ../sass/_question-style.scss */
+/* line 142, ../sass/_question-style3.scss */
 body .SingleRadio ul.int10 li:nth-child(10n+1),
 body .MultiCheckbox ul.int10 li:nth-child(10n+1) {
   clear: left;
 }
-/* line 183, ../sass/_question-style.scss */
+/* line 148, ../sass/_question-style3.scss */
 body .SingleRadio ul:after,
 body .MultiCheckbox ul:after {
   content: "​";
@@ -437,23 +405,23 @@ body .MultiCheckbox ul:after {
   visibility: hidden;
   clear: both;
 }
-/* line 194, ../sass/_question-style.scss */
+/* line 159, ../sass/_question-style3.scss */
 body .ImageSelect li {
   width: 33%;
   float: left;
   color: #333;
 }
-/* line 198, ../sass/_question-style.scss */
+/* line 163, ../sass/_question-style3.scss */
 body .ImageSelect li:nth-child(3n+1) {
   clear: left;
 }
 @media (max-width: 768px) {
-  /* line 194, ../sass/_question-style.scss */
+  /* line 159, ../sass/_question-style3.scss */
   body .ImageSelect li {
     width: 100%;
   }
 }
-/* line 204, ../sass/_question-style.scss */
+/* line 169, ../sass/_question-style3.scss */
 body .ImageSelect li > div {
   position: relative;
   padding: 30px 10px;
@@ -463,12 +431,12 @@ body .ImageSelect li > div {
   border: 1px solid #D3EBFF;
 }
 @media (max-width: 768px) {
-  /* line 204, ../sass/_question-style.scss */
+  /* line 169, ../sass/_question-style3.scss */
   body .ImageSelect li > div {
     padding: 10px;
   }
 }
-/* line 215, ../sass/_question-style.scss */
+/* line 180, ../sass/_question-style3.scss */
 body .ImageSelect li > div label a {
   display: block;
   background-size: contain;
@@ -476,29 +444,29 @@ body .ImageSelect li > div label a {
   background-position: center;
   height: 185px;
 }
-/* line 221, ../sass/_question-style.scss */
+/* line 186, ../sass/_question-style3.scss */
 body .ImageSelect li > div label a img {
   visibility: hidden;
   width: 100%;
 }
-/* line 226, ../sass/_question-style.scss */
+/* line 191, ../sass/_question-style3.scss */
 body .ImageSelect li > div label div {
   width: 50%;
   margin: 0 auto;
   margin-top: 10px;
 }
-/* line 230, ../sass/_question-style.scss */
+/* line 195, ../sass/_question-style3.scss */
 body .ImageSelect li > div label div input {
   float: left;
   margin: 5px;
   padding-right: 3px;
 }
-/* line 235, ../sass/_question-style.scss */
+/* line 200, ../sass/_question-style3.scss */
 body .ImageSelect li > div label div p {
   overflow: hidden;
 }
 
-/* line 245, ../sass/_question-style.scss */
+/* line 210, ../sass/_question-style3.scss */
 .Edit {
   width: 31px;
   height: 31px;
@@ -507,36 +475,42 @@ body .ImageSelect li > div label div p {
   top: 10px;
   right: 33px;
 }
-/* line 254, ../sass/_question-style.scss */
+/* line 219, ../sass/_question-style3.scss */
 .Edit:hover + span {
   background-color: #6CCDCD;
   color: #ffffff;
 }
-/* line 257, ../sass/_question-style.scss */
+/* line 222, ../sass/_question-style3.scss */
 .Edit:hover + span:after {
   border-color: transparent transparent #6CCDCD transparent;
 }
 
-/* line 263, ../sass/_question-style.scss */
+/* line 228, ../sass/_question-style3.scss */
 .required ~ .required-message {
   display: block;
 }
 
-/* line 267, ../sass/_question-style.scss */
+/* line 232, ../sass/_question-style3.scss */
 .required {
   border-color: #c43b1d !important;
 }
 
-/* line 271, ../sass/_question-style.scss */
+/* line 236, ../sass/_question-style3.scss */
 .required-message {
   display: none;
   margin-bottom: 20px;
 }
 
-/* line 276, ../sass/_question-style.scss */
+/* line 241, ../sass/_question-style3.scss */
 .required-message {
   color: #c43b1d;
   font-weight: 400;
   font-size: 1.000rem;
   font-style: normal;
+}
+
+/* line 247, ../sass/_question-style3.scss */
+select {
+  font-size: 15px;
+  height: 30px;
 }
