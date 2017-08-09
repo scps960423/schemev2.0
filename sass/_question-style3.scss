@@ -28,7 +28,7 @@ body {
             text-indent: 10px;
         }
         .Title {
-            // font-weight: 600;
+            font-size: $font-size-l;
             margin: 10px 0;
             background: url("../images/form_icon.png") left 0px no-repeat;
             margin-left: $interval-ll;
@@ -38,33 +38,41 @@ body {
             .TitleNumber {
                 margin-left: -$interval-ll;
             }
-        }
+        } //影片
         .video {
             margin-left: $interval-ll;
-        }
-        .AddressArea,
-        .DateArea,
+        } //日期
+        .DateArea {
+            margin-left: $interval-ll;
+        } //上傳檔案
         .UploadArea {
             margin-left: $interval-ll;
             .upload {
                 font-size: 15px;
                 margin-right: 5px;
             }
+        } //住址
+        .AddressArea {
+            margin-left: $interval-ll;
+            .zip {
+                width: 4em;
+            }
         }
     }
-    .SingleRadio,
+    /*     .SingleRadio,
     .MultiCheckbox,
     .Description {
         margin: 10px;
         margin-left: $interval-ll;
         font-size: $font-size-l;
-    }
+    } */
     .Description {
+        margin: 10px;
+        margin-left: $interval-ll;
+        font-size: $font-size-l;
         display: block !important;
         color: $deep;
         margin-top: -7px; //margin-left: -0px;
-        /* color: $deep !important;
-        border-top: 1px dotted $deep !important; */
     }
     .ParagraphTitle {
         color: $main-color;
@@ -82,35 +90,47 @@ body {
         background-color: #F4FAF9;
         border: 1px solid #D3EBFF;
     }
-    .TextInput,
+    .TextInput {
+        padding-left: $interval-ll;
+        input {
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            min-width: 95%;
+            height: 100%;
+            color: #515151 !important;
+            height: 40px;
+        }
+    }
+    /*     .TextInput,
     .MultiLineInput,
     .DropDown {
         padding-left: $interval-ll;
+    } */
+    .DropDown {
+        padding-left: $interval-ll;
     }
-    .TextInput input,
-    .MultiLineInput textarea {
-        border-radius: 5px;
-        border: 1px solid #ccc;
-        min-width: 95%;
-        height: 100%;
-        color: #515151 !important;
+    .MultiLineInput {
+        padding-left: $interval-ll;
+        textarea {
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            min-width: 95%;
+            height: 120px;
+            color: #515151 !important;
+        }
     }
-    .TextInput input {
-        height: 40px;
-    }
-    .MultiLineInput textarea {
-        height: 120px;
-    }
-    .Title {
-        font-size: $font-size-l;
-    }
+
     .SingleImage img {
         width: 30%;
         margin-left: $interval-ll;
     }
+
     .SingleRadio,
     .MultiCheckbox {
         line-height: 175%;
+        margin: 10px;
+        margin-left: $interval-ll;
+        font-size: $font-size-l;
         ul {
             li {
                 div {
@@ -244,6 +264,7 @@ body {
     font-size: 1.000rem;
     font-style: normal;
 }
+
 select {
     font-size: 15px;
     height: 30px;
