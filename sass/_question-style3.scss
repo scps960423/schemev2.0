@@ -58,35 +58,31 @@ body {
                 width: 4em;
             }
         }
-    }
-    //說明文字
+    } //說明文字
     .Description {
         margin: 10px;
         margin-left: $interval-ll;
         font-size: $font-size-l;
         display: block !important;
-        color: $deep;
-        margin-top: -7px; 
-    }
-    //段落標題
+        color: $deep-gray;
+        margin-top: -7px;
+    } //段落標題
     .ParagraphTitle {
         color: $main-color;
         margin-top: 30px;
         margin-bottom: 15px;
-        font-weight: 600;
         text-align: center;
         margin: 30px 0 15px 0;
-        font-size: $font-size-l;
-    }
-    //段落標題說明文字
+        font-size: 1.3em;
+    } //段落標題說明文字
     .ParagraphDescription {
         padding: 10px;
         font-size: $font-size-l;
         min-height: 100px;
         background-color: #F4FAF9;
         border: 1px solid #D3EBFF;
-    }
-    //單行文字輸入框
+        text-align: center;
+    } //單行文字輸入框
     .TextInput {
         padding-left: $interval-ll;
         input {
@@ -97,12 +93,10 @@ body {
             color: #515151 !important;
             height: 40px;
         }
-    }
-    //題目_下拉式選單
+    } //題目_下拉式選單
     .DropDown {
         padding-left: $interval-ll;
-    }
-    //多行文字輸入
+    } //多行文字輸入
     .MultiLineInput {
         padding-left: $interval-ll;
         textarea {
@@ -112,13 +106,23 @@ body {
             height: 120px;
             color: #515151 !important;
         }
+    } // 單選題與多選題的其他選項樣式
+    // 因為他多一個輸入框所以在對其上跟其他的li不一樣
+    // 所以獨立寫一個class給他（前後台都有）
+    .otherOptions {
+        margin-top: 10px;
+        label {
+            margin-left: 5px;
+        }
+        //再每行選項多餘四個的時候其他選項會跑掉所以把輸入框的寬度縮減
+        input[type="text"] {
+            width: 55%;
+        }
     }
-
     .SingleImage img {
         width: 30%;
         margin-left: $interval-ll;
     }
-
     .SingleRadio,
     .MultiCheckbox {
         line-height: 175%;
@@ -169,7 +173,6 @@ body {
         }
     }
     .ImageSelect {
-        // margin: 0 10px;
         li {
             width: 33%;
             float: left;
