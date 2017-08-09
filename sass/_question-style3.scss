@@ -59,21 +59,16 @@ body {
             }
         }
     }
-    /*     .SingleRadio,
-    .MultiCheckbox,
-    .Description {
-        margin: 10px;
-        margin-left: $interval-ll;
-        font-size: $font-size-l;
-    } */
+    //說明文字
     .Description {
         margin: 10px;
         margin-left: $interval-ll;
         font-size: $font-size-l;
         display: block !important;
         color: $deep;
-        margin-top: -7px; //margin-left: -0px;
+        margin-top: -7px; 
     }
+    //段落標題
     .ParagraphTitle {
         color: $main-color;
         margin-top: 30px;
@@ -83,6 +78,7 @@ body {
         margin: 30px 0 15px 0;
         font-size: $font-size-l;
     }
+    //段落標題說明文字
     .ParagraphDescription {
         padding: 10px;
         font-size: $font-size-l;
@@ -90,6 +86,7 @@ body {
         background-color: #F4FAF9;
         border: 1px solid #D3EBFF;
     }
+    //單行文字輸入框
     .TextInput {
         padding-left: $interval-ll;
         input {
@@ -101,14 +98,11 @@ body {
             height: 40px;
         }
     }
-    /*     .TextInput,
-    .MultiLineInput,
-    .DropDown {
-        padding-left: $interval-ll;
-    } */
+    //題目_下拉式選單
     .DropDown {
         padding-left: $interval-ll;
     }
+    //多行文字輸入
     .MultiLineInput {
         padding-left: $interval-ll;
         textarea {
