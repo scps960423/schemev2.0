@@ -31,7 +31,7 @@ body {
             // font-weight: 600;
             margin: 10px 0;
             background: url("../images/form_icon.png") left 0px no-repeat;
-            font-size: 12.5pt;
+            font-size: $font-size-hscp;
             color: $main-color;
             width: 94%;
         }
@@ -55,9 +55,8 @@ body {
             }
         }
         .AddressArea {
-            // padding-left: 80px;
             .zip {
-                /* @extend %frame; */
+                width: 4em;
                 height: 19px;
                 font-size: 11px;
                 margin-right: 5px;
@@ -65,7 +64,7 @@ body {
             .county,
             .district {
                 line-height: 25px;
-                font-size: 12.5pt;
+                font-size: $font-size-hscp;
                 color: #666666;
                 vertical-align: middle;
                 margin-right: 4px;
@@ -86,58 +85,67 @@ body {
             margin-left: -7px;
         }
     }
-    .SingleRadio,
-    .MultiCheckbox,
+    .otherOptions {
+        margin-top: 10px;
+        label {
+            margin-left: 5px;
+        } //再每行選項多餘四個的時候其他選項會跑掉所以把輸入框的寬度縮減
+        input[type="text"] {
+            width: 55%;
+        }
+    }
     .Description {
         margin: 10px;
         margin-left: 13px;
-        font-size: 12.5pt;
-    }
-    .Description {
+        font-size: $font-size-hscp;
         display: block !important;
         color: $deep;
         margin-top: -7px;
+        width: 94%;
     }
     .ParagraphTitle {
         color: $main-color;
         margin-top: 30px;
-        margin-bottom: 15px; //font-weight: 600;
+        margin-bottom: 15px;
         text-align: center;
         margin: 30px 0 15px 0;
-        font-size: 12.5pt;
+        font-size: 1.1em;
     }
     .ParagraphDescription {
         padding: 10px;
-        font-size: 11pt;
+        font-size: 12.5pt;
         min-height: 100px;
         background-color: #F4FAF9;
         border: 1px solid #D3EBFF;
+        text-align: center;
     }
-    .TextInput,
-    .MultiLineInput,
+    .TextInput {
+        margin-left: 15px;
+        input {
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            min-width: 95%;
+            height: 100%;
+            color: #515151 !important;
+            height: 40px;
+        }
+    }
     .DropDown {
         margin-left: 15px;
+        .jumpSelect {
+            height: 27px;
+            font-size: $font-size-hscp;
+        }
     }
-    .DropDown .jumpSelect {
-        height: 27px;
-        font-size: 12.5pt;
-    }
-    .TextInput input,
-    .MultiLineInput textarea {
-        border-radius: 5px;
-        border: 1px solid #ccc;
-        min-width: 95%;
-        height: 100%;
-        color: #515151 !important;
-    }
-    .TextInput input {
-        height: 40px;
-    }
-    .MultiLineInput textarea {
-        height: 120px;
-    }
-    .Title {
-        //font-size: 1.1em;
+    .MultiLineInput {
+        margin-left: 15px;
+        textarea {
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            min-width: 95%;
+            color: #515151 !important;
+            height: 120px;
+        }
     }
     .SingleImage img {
         width: 30%;
@@ -146,6 +154,9 @@ body {
     .SingleRadio,
     .MultiCheckbox {
         line-height: 175%;
+        margin: 10px;
+        margin-left: 13px;
+        font-size: $font-size-hscp;
         ul {
             li {
                 div {

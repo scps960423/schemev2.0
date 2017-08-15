@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* line 101, ../sass/_variable.scss */
+/* line 81, ../sass/_variable.scss */
 body .doc_container .docs-editor .schema-editor .CollapseArea .Content:after, body .doc_container .docs-editor .schema-editor .CollapseArea .Content div[dataid="10"] .ImageList:after {
   content: "​";
   display: block;
@@ -7,7 +7,7 @@ body .doc_container .docs-editor .schema-editor .CollapseArea .Content:after, bo
   clear: both;
 }
 
-/* line 323, ../sass/_variable.scss */
+/* line 481, ../sass/_variable.scss */
 body .doc_container .docs-editor .schema-editor .CollapseArea .EditFeatures .Copy, body .doc_container .docs-editor .schema-editor .CollapseArea .EditFeatures .Delete {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -20,20 +20,20 @@ body .doc_container .docs-editor .schema-editor .CollapseArea .EditFeatures .Cop
   vertical-align: middle;
   font-size: 0.9em;
 }
-/* line 333, ../sass/_variable.scss */
+/* line 491, ../sass/_variable.scss */
 body .doc_container .docs-editor .schema-editor .CollapseArea .EditFeatures .Copy:link, body .doc_container .docs-editor .schema-editor .CollapseArea .EditFeatures .Delete:link {
   color: #a1a1a1;
 }
-/* line 337, ../sass/_variable.scss */
+/* line 494, ../sass/_variable.scss */
 body .doc_container .docs-editor .schema-editor .CollapseArea .EditFeatures .Copy:visited, body .doc_container .docs-editor .schema-editor .CollapseArea .EditFeatures .Delete:visited {
   color: #a1a1a1;
 }
-/* line 341, ../sass/_variable.scss */
+/* line 497, ../sass/_variable.scss */
 body .doc_container .docs-editor .schema-editor .CollapseArea .EditFeatures .Copy:hover, body .doc_container .docs-editor .schema-editor .CollapseArea .EditFeatures .Delete:hover {
   background-color: #d8d8d8;
   color: #ffffff;
 }
-/* line 346, ../sass/_variable.scss */
+/* line 501, ../sass/_variable.scss */
 body .doc_container .docs-editor .schema-editor .CollapseArea .EditFeatures .Copy:active, body .doc_container .docs-editor .schema-editor .CollapseArea .EditFeatures .Delete:active {
   color: #a1a1a1;
 }
@@ -675,7 +675,7 @@ body .doc_container .docs-editor .schema-editor .CollapseArea .Content .AllowFil
 }
 /* line 391, ../sass/_style.scss */
 body .doc_container .docs-editor .schema-editor .CollapseArea .Content .option li {
-  margin-left: 65px;
+  margin-left: 72px;
 }
 /* line 393, ../sass/_style.scss */
 body .doc_container .docs-editor .schema-editor .CollapseArea .Content .option li input {

@@ -64,7 +64,7 @@ body {
         margin-left: $interval-ll;
         font-size: $font-size-l;
         display: block !important;
-        color: $deep-gray;
+        color: $deep;
         margin-top: -7px;
     } //段落標題
     .ParagraphTitle {
@@ -113,8 +113,7 @@ body {
         margin-top: 10px;
         label {
             margin-left: 5px;
-        }
-        //再每行選項多餘四個的時候其他選項會跑掉所以把輸入框的寬度縮減
+        } //再每行選項多餘四個的時候其他選項會跑掉所以把輸入框的寬度縮減
         input[type="text"] {
             width: 55%;
         }
