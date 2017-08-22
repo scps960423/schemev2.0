@@ -42,6 +42,10 @@ body {
         .video {
             margin-left: $interval-ll;
         } //日期
+        video {
+            margin-left: $interval-ll;
+            width: 100%;
+        }
         .DateArea {
             margin-left: $interval-ll;
         } //上傳檔案
@@ -96,6 +100,9 @@ body {
     } //題目_下拉式選單
     .DropDown {
         padding-left: $interval-ll;
+        .jumpSelect {
+            font-size: 1em !important;
+        }
     } //多行文字輸入
     .MultiLineInput {
         padding-left: $interval-ll;
