@@ -1,3 +1,4 @@
+@import 'question_EditBody';
 body {
     background-color: $white;
     font: 12pt arial, 微軟正黑體, sans-serif !important;
@@ -11,11 +12,11 @@ body {
     }
     position: relative;
     #ContentPlaceHolder1_divContent {
-        margin-bottom: 1em;
+        margin-bottom: $interval-ll;
     }
     #ui-datepicker-div {
         opacity: 0;
-    }
+    } //後台
     .Question {
         border: 1px solid transparent;
         margin-top: 15px !important;
@@ -28,57 +29,42 @@ body {
             text-indent: 10px;
         }
         .Title {
-            // font-weight: 600;
+            position: relative;
+            font-size: $font-size-l;
             margin: 10px 0;
             background: url("../images/form_icon.png") left 0px no-repeat;
-            font-size: $font-size-hscp;
-            color: $main-color;
-            width: 94%;
+            margin-left: $interval-ll;
+            color: $main-color !important;
+            border-bottom: 1px dotted $main-color;
+            width: 95%;
+            .TitleNumber {
+                position: absolute;
+             //   margin-left: -$interval-ll;
+                left: -15px;
+                top: 1.7px;
+            }
         }
         .video {
-            margin-left: 15px;
-        }
-        .AddressArea,
-        .DateArea,
-        .UploadArea {
-            margin-left: 15px;
-        }
-        .UploadArea {
-            @extend %frame2;
-            Input {
-                @extend %frame2;
-                margin-right: 5px;
-                padding-bottom: 5px;
-            }
-            span {
-                margin-left: 3px;
-            }
-        }
-        .AddressArea {
-            .zip {
-                width: 4em;
-                height: 19px;
-                font-size: 11px;
-                margin-right: 5px;
-            }
-            .county,
-            .district {
-                line-height: 25px;
-                font-size: $font-size-hscp;
-                color: #666666;
-                vertical-align: middle;
-                margin-right: 4px;
-            }
-            .address {
-                @extend %frame2;
-                color: #666666;
-            }
+            margin-left: $interval-ll;
+        } //日期
+        video {
+            margin-left: $interval-ll;
+            width: 100%;
         }
         .DateArea {
-            .dateInput {
-                height: 19px;
-                font-size: 11pt;
+            margin-left: $interval-ll;
+        } //上傳檔案
+        .UploadArea {
+            margin-left: $interval-ll;
+            .upload {
+                font-size: 15px;
                 margin-right: 5px;
+            }
+        } //住址
+        .AddressArea {
+            margin-left: $interval-ll;
+            .zip {
+                width: 4em;
             }
         }
         .ImageSelect {
@@ -93,15 +79,13 @@ body {
         input[type="text"] {
             width: 55%;
         }
-    }
+    } //說明文字
     .Description {
         margin: 10px;
-        margin-left: 13px;
-        font-size: $font-size-hscp;
+        margin-left: $interval-ll;
+        font-size: $font-size-l;
         display: block !important;
         color: $deep;
-        margin-top: -7px;
-        width: 94%;
     }
     .ParagraphTitle {
         color: $main-color;
@@ -109,18 +93,19 @@ body {
         margin-bottom: 15px;
         text-align: center;
         margin: 30px 0 15px 0;
-        font-size: 1.1em;
+        font-size: 1.3em;
     }
     .ParagraphDescription {
         padding: 10px;
-        font-size: 12.5pt;
+        font-size: $font-size-l;
         min-height: 100px;
         background-color: #F4FAF9;
         border: 1px solid #D3EBFF;
         text-align: center;
-    }
+    } //單行文字輸入框
     .TextInput {
-        margin-left: 15px;
+        padding-left: $interval-ll;
+        width: 50%;
         input {
             border-radius: 5px;
             border: 1px solid #ccc;
@@ -129,16 +114,15 @@ body {
             color: #515151 !important;
             height: 40px;
         }
-    }
+    } //題目_下拉式選單
     .DropDown {
-        margin-left: 15px;
+        padding-left: $interval-ll;
         .jumpSelect {
-            height: 27px;
-            font-size: $font-size-hscp;
+            font-size: 1em !important;
         }
     }
     .MultiLineInput {
-        margin-left: 15px;
+        padding-left: $interval-ll;
         textarea {
             border-radius: 5px;
             border: 1px solid #ccc;
@@ -149,7 +133,7 @@ body {
     }
     .SingleImage img {
         width: 30%;
-        margin-left: 15px;
+        margin-left: $interval-ll;
     }
     .SingleRadio,
     .MultiCheckbox {
@@ -163,13 +147,12 @@ body {
                     label {
                         input {
                             float: left;
-                            margin: 9px 0;
+                            margin: 7px 0;
                             border-color: #ccc;
-                            margin-right: 5px;
                         }
                         p {
                             overflow: hidden;
-                            /* padding-left: 5px; */
+                            padding-left: 5px;
                             margin: 10px 0 0 0;
                         }
                     }
@@ -202,7 +185,6 @@ body {
         }
     }
     .ImageSelect {
-        // margin: 0 10px;
         li {
             width: 33%;
             float: left;
@@ -290,4 +272,9 @@ body {
     font-weight: 400;
     font-size: 1.000rem;
     font-style: normal;
+}
+
+select {
+    font-size: 15px;
+    height: 30px;
 }

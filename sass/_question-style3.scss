@@ -62,15 +62,16 @@ body {
                 width: 4em;
             }
         }
-    } //說明文字
+    } 
+    //說明文字
     .Description {
         margin: 10px;
         margin-left: $interval-ll;
         font-size: $font-size-l;
         display: block !important;
         color: $deep;
-        margin-top: -7px;
-    } //段落標題
+    } 
+    //段落標題
     .ParagraphTitle {
         color: $main-color;
         margin-top: 30px;
@@ -89,6 +90,7 @@ body {
     } //單行文字輸入框
     .TextInput {
         padding-left: $interval-ll;
+        width: 50%;
         input {
             border-radius: 5px;
             border: 1px solid #ccc;
