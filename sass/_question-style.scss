@@ -28,6 +28,9 @@ body {
             color: #A50E0E;
             text-indent: 10px;
         }
+        .No_line {
+            border-bottom: 0px dotted $main-color !important;
+        }
         .Title {
             position: relative;
             font-size: $font-size-l;
@@ -38,8 +41,7 @@ body {
             border-bottom: 1px dotted $main-color;
             width: 95%;
             .TitleNumber {
-                position: absolute;
-             //   margin-left: -$interval-ll;
+                position: absolute; //   margin-left: -$interval-ll;
                 left: -15px;
                 top: 1.7px;
             }
